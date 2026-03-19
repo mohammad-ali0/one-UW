@@ -31,7 +31,9 @@
     max-width: 150px;
   }
 }
-
+p{
+  font-family: "DM Sans", sans-serif;
+}
     .nav-link {
        font-family: "DM Sans", sans-serif;
       font-weight: 500;
@@ -346,6 +348,333 @@ font-family: 'Brice''sans-serif';
     font-size: 22px;
   }
 }
+.services-header {
+  background: #7AB93B;
+  text-align: center;
+  padding: 40px 0 60px;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.service-section {
+  padding: 80px 0;
+}
+
+/* MAIN BOX */
+#serviceCarousel {
+  border-radius: 30px;
+  padding: 40px;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+
+  /* TOP → BOTTOM GRADIENT */
+  background: linear-gradient(
+    to bottom,
+    #2c3e75 0%,
+    #3a578c 40%,
+    #5f8f66 70%,
+    #7AB93B 100%
+  );
+}
+
+/* HEADER */
+.service-header h3 {
+  font-family: 'Brice', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.service-header p {
+  font-size: 13px;
+  max-width: 500px;
+}
+
+/* ARROWS */
+.carousel-nav {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.carousel-nav button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 8px;
+  background: #fff;
+  color: #324896;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* CARD */
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  color: #111;
+  height: 100%;
+}
+
+/* ICON */
+.service-card img {
+  width: 152px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.service-card h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.service-card p {
+   flex-grow: 1;
+  font-size: 13px;
+  color: #555;
+}
+
+/* BUTTON */
+.service-btn {
+  margin-top: 10px;
+  background: #324896;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 0 #7AB93B;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  #serviceCarousel {
+    padding: 25px;
+  }
+
+  .service-header h3 {
+    font-size: 18px;
+  }
+
+  .carousel-nav {
+    top: 20px;
+    right: 20px;
+  }
+}
+/* SECTION */
+.promise-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+/* TITLE */
+.promise-title {
+  font-family: 'Brice', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #073569;
+}
+
+/* SUBTITLE */
+.promise-subtitle {
+  max-width: 700px;
+  margin: 10px auto;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* CARD */
+.promise-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  border: 1px solid #e5e7eb;
+  height: 100%;
+  transition: 0.3s;
+}
+
+/* ICON */
+.promise-card img {
+  width: 148px;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.promise-card h5 {
+  font-weight: 700;
+  color: #073569;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.promise-card p {
+  font-family: DM Sans;
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: lowercase;
+color:#000000;
+;
+
+}
+
+/* HOVER EFFECT */
+.promise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .promise-title {
+    font-size: 22px;
+  }
+}
+
+/* safety section */
+/* SECTION */
+.safety-section {
+  padding: 70px 0;
+  background: #f5f7fb;
+}
+
+/* MAIN BOX */
+.safety-box {
+  background: #cfe3e6; /* light blue like design */
+  border-radius: 25px;
+  padding: 40px;
+}
+
+/* IMAGE */
+.safety-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* TITLE */
+.safety-content h2 {
+  font-family: 'Brice', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #073569;
+  line-height: 1.3;
+}
+
+/* TEXT */
+.safety-content p {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* FEATURE */
+.safety-content h6 {
+  font-weight: 700;
+  font-size: 14px;
+  color: #073569;
+  margin-bottom: 5px;
+}
+
+/* DOT ICON */
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #7AB93B;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .safety-box {
+    padding: 25px;
+  }
+
+  .safety-content h2 {
+    font-size: 22px;
+  }
+
+  .safety-img {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+/* CARD */
+.testimonial-section{
+  margin-bottom: 20px;
+}
+.test-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+border-style: solid;
+  border-color: #7AB93B;
+  /* 🔥 EXACT BORDER */
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 5px;
+  border-left-width: 2px;
+ 
+
+  /* 🔥 BOTTOM GREEN LINE EFFECT (REAL MATCH) */
+
+  text-align: left;
+  height: 100%;
+
+ 
+}
+
+/* HOVER (VERY LIGHT LIKE DESIGN) */
+
+
+/* TEXT */
+.test-card p {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* STARS (EXACT RED) */
+.stars {
+  color: #ff2d2d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* USER */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+/* NAME */
+.user h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ROLE */
+.user span {
+  font-size: 12px;
+  color: #6b7280;
+}
   </style>
 </head>
 <body>
@@ -370,7 +699,8 @@ font-family: 'Brice''sans-serif';
 
       <span class="navbar-toggler-icon"></span>
     </button>
-
+<!--  -->
+    
     <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
@@ -652,6 +982,286 @@ font-family: 'Brice''sans-serif';
         </div>
 
       </div>
+    </div>
+
+  </div>
+</section>
+<section class="service-section">
+  <div class="container">
+
+    <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel" >
+
+      <!-- HEADER -->
+      <div class="service-header">
+        <h3>WE CARE FOR YOUR TRAVEL ALONG<br>WITH YOUR VEHICLE</h3>
+        <p>
+          Discover the most used and trusted services on CharPair, designed to make your travel and vehicle needs easier.
+        </p>
+
+        <!-- ARROWS -->
+        <div class="carousel-nav">
+          <button data-bs-target="#serviceCarousel" data-bs-slide="prev">
+            ‹
+          </button>
+          <button data-bs-target="#serviceCarousel" data-bs-slide="next">
+            ›
+          </button>
+        </div>
+      </div>
+
+      <!-- SLIDES -->
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row g-4">
+
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img src="./images/service1.png">
+                <h5>Intercity Rides</h5>
+                <p>Planning a trip to another city  Skip expensive last-minute tickets and travel comfortably with city-to-city carpool rides. Charpair connects drivers and passengers travelling between cities for affordable, convenient, and reliable intercity travel.</p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img src="./images/service2.png">
+                <h5>Find Lift</h5>
+                <p>Finding a ride for your travel shouldn’t feel complicated.  With Charpair, you can connect with people already travelling along your route and reserve a seat with confidence. Every profile is verified, so you know exactly who you’re travelling with.</p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img src="./images/service3.png">
+                <h5>Offer Lift</h5>
+                <p>Driving alone? Turn your empty seats into savings.  Offer a lift to verified co-travellers heading along your route and reduce your fuel costs instantly.</p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img src="./images/service4.png">
+                <h5>Add Business</h5>
+                <p>Vehicle-related businesses can list their services on CharPair and reach nearby users easily. From car wash, servicing, oil change, and detailing to seat covers and accessories—connect with customers looking for trusted automotive services.</p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="promise-section">
+  <div class="container text-center">
+
+    <!-- TITLE -->
+    <h2 class="promise-title">THE 4 PROMISES OF CHARPAIR</h2>
+
+    <p class="promise-subtitle">
+      charpair is built on four core principles that define our commitment to you.
+      every feature, every interaction, and every journey on our platform is designed around these values.
+    </p>
+
+    <!-- CARDS -->
+    <div class="row g-4 mt-4">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="promise-card">
+          <img src="./images/promise1.png">
+          <h5>EASY</h5>
+          <p>
+            Simple, intuitive interface that anyone can use. No complicated steps, no unnecessary features. Just straightforward ride sharing and cost splitting that takes minutes to set up and use.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="promise-card">
+          <img src="./images/promise2.png">
+          <h5>ECONOMIC</h5>
+          <p>
+            Save money on every journey. Share fuel costs, toll expenses, and travel charges with others heading the same way. Your wallet gets relief, and the environment benefits too.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="promise-card">
+          <img src="./images/promise3.png">
+          <h5>ECO-FRIENDLY</h5>
+          <p>
+            Reduce your carbon footprint. By sharing rides instead of traveling solo, you contribute to fewer vehicles on the road and lower emissions. Travel responsibly while saving money.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="promise-card">
+          <img src="./images/promise4.png">
+          <h5>COMFORTABLE</h5>
+          <p>
+            Travel with ease and confidence. Private vehicles, verified drivers, and riders you trust. Enjoy comfort without compromising on safety or convenience during your journey.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="safety-section">
+  <div class="container">
+
+    <div class="safety-box">
+      <div class="row align-items-center">
+
+        <!-- LEFT IMAGE -->
+        <div class="col-lg-6">
+          <div class="safety-img">
+            <img src="./images/safety-banner.png" alt="">
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-6">
+          <div class="safety-content">
+
+            <h2>SAFETY AND TRUST<br>TRAVEL WITH CONFIDENCE</h2>
+
+            <p class="mt-3">
+              Safety and transparency are at the core of CharPair. While CharPair does not provide
+              transport services, it offers tools that help users make informed decisions before and during a ride.
+            </p>
+
+            <!-- FEATURES -->
+            <div class="row mt-4">
+
+              <div class="col-md-6 d-flex">
+                <span class="dot"></span>
+                <div>
+                  <h6>SAFETY FIRST</h6>
+                  <p>verified drivers and secure rides — your safety always comes first.</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex">
+                <span class="dot"></span>
+                <div>
+                  <h6>AFFORDABLE PRICES</h6>
+                  <p>enjoy cost-effective travel with transparent pricing and no hidden charges.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="container text-center">
+
+    <!-- TITLE -->
+    <h2 class="test-title">LOVED BY OUR COMMUNITY</h2>
+    <p class="test-sub">
+      Feedback from early users who believe in shared travel, savings, and responsible commuting.
+    </p>
+
+    <!-- CAROUSEL -->
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+
+            <!-- CARD -->
+            <div class="col-lg-4 col-md-6">
+              <div class="test-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “I started offering rides on CharPair and it’s been fantastic to reduce fuel expenses.
+                  The cost-sharing model is fair and transparent.”
+                </p>
+                <div class="user">
+                  <img src="https://i.pravatar.cc/50?img=1">
+                  <div>
+                    <h6>Arjun Verma</h6>
+                    <span>Chandigarh Driver</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col-lg-4 col-md-6">
+              <div class="test-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “Great platform! I met interesting people and saved money on daily rides.
+                  Highly recommended for city travel.”
+                </p>
+                <div class="user">
+                  <img src="https://i.pravatar.cc/50?img=2">
+                  <div>
+                    <h6>Rahul Sharma</h6>
+                    <span>Delhi User</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col-lg-4 col-md-6">
+              <div class="test-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                  “CharPair makes travel easy, affordable, and eco-friendly.
+                  I love the simplicity and safety features.”
+                </p>
+                <div class="user">
+                  <img src="https://i.pravatar.cc/50?img=3">
+                  <div>
+                    <h6>Sneha Patel</h6>
+                    <span>Mumbai Rider</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ADD MORE SLIDES SAME WAY -->
+
+      </div>
+
+      <!-- INDICATORS -->
+      <div class="carousel-indicators mt-4">
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+      </div>
+
     </div>
 
   </div>
