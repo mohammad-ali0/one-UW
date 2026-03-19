@@ -16,7 +16,7 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/faq.css" />
   </head>
   <body>
     <!-- Responsive Navbar -->
@@ -68,73 +68,302 @@
     <!-- Hilling Banner Section -->
     <section class="hero-banner">
       <div class="hill-content">
-        <h1 class="banner-title">Contact Us</h1>
+        <h1 class="banner-title">Frequently Asked Question</h1>
       </div>
     </section>
 
-    <!-- Get In Touch Section -->
-    <section class="contact-section">
+    <!-- FAQ Section -->
+    <section class="faq-section">
       <div class="container">
-        <div class="contact-container">
-          <div class="row align-items-stretch">
-            <!-- Form Column -->
-            <div class="col-lg-6">
-              <h2 class="contact-title">GET IN TOUCH</h2>
-              <form>
-                <input
-                  type="text"
-                  class="form-control-custom w-100"
-                  placeholder="FULL NAME *"
-                />
-                <input
-                  type="email"
-                  class="form-control-custom w-100"
-                  placeholder="EMAIL"
-                />
-                <input
-                  type="text"
-                  class="form-control-custom w-100"
-                  placeholder="CONTACT"
-                />
-                <input
-                  type="text"
-                  class="form-control-custom w-100"
-                  placeholder="SUBJECT"
-                />
-                <textarea
-                  class="form-control-custom w-100"
-                  rows="4"
-                  placeholder="MESSAGE"
-                ></textarea>
-                <button type="submit" class="btn-send-message">
-                  Send Message
-                </button>
-              </form>
+        <div class="faq-header">
+          <h2>YOUR QUESTIONS ANSWERED</h2>
+          <p>
+            Find Answers To The Most Common Questions About CharPair,
+            Verification, Payments, Safety, And More.
+          </p>
+        </div>
 
-              <div class="contact-info">
-                <h3 class="contact-info-title">CONTACT INFO:</h3>
-                <ul class="contact-info-list">
-                  <li>(+91) 998*******</li>
-                  <li>NEW DELHI</li>
-                  <li>
-                    <a href="mailto:SUPPORT@CHARPAIR.COM"
-                      >SUPPORT@CHARPAIR.COM</a
-                    >
-                  </li>
-                </ul>
+        <div class="faq-container">
+          <div class="accordion" id="faqAccordion">
+            <!-- Item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1"
+                >
+                  <span class="faq-icon">✓</span> USER VERIFICATION
+                </button>
+              </h2>
+              <div
+                id="faq1"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Details about user verification processes.
+                </div>
               </div>
             </div>
 
-            <!-- Map Column -->
-            <div class="col-lg-6">
-              <div class="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118984.34138407421!2d81.54714151640625!3d21.2319082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda239634e91%3A0x6b7720d2d3c9071b!2sRaipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
+            <!-- Item 2 (Expanded in Image) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2"
                 >
-                </iframe>
+                  <span class="faq-icon">🚗</span> VEHICLE VERIFICATION
+                </button>
+              </h2>
+              <div
+                id="faq2"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Charpair Ensures That Vehicle Details Shared On The Platform
+                  Are Reviewed For Accuracy And Transparency. Verified Vehicle
+                  Information Helps Riders Choose Trusted Cars And Travel With
+                  More Confidence.
+
+                  <span class="faq-q"
+                    >Q: Why Is Vehicle Verification Important?</span
+                  >
+                  Verifying Your Vehicle Assures Users That Your Vehicle Is
+                  Safe, Insured, And Suitable For Ride-Sharing. It Helps Avoid
+                  Fake Or Outdated Vehicle Details. This Builds Trust And Can
+                  Increase Your Chance Of Getting More Lifty Bookings.
+
+                  <span class="faq-q"
+                    >Q: What Documents Do I Need For Verification?</span
+                  >
+                  <ul class="faq-list">
+                    <li>Vehicle Model (E.G. Hyundai i10)</li>
+                    <li>Registration Number</li>
+                    <li>Category (Hatchback/Sedan/SUV)</li>
+                    <li>Insurance Validity Or Expiry Date</li>
+                    <li>Fare Per KM</li>
+                    <li>Number Of Seats Available</li>
+                    <li>Clear Front & Back Images Of The Vehicle</li>
+                    <li>RC Image (Registration Certificate)</li>
+                  </ul>
+                  For Bikes, Similar Details Apply (Model, Insurance, RC,
+                  Vehicle Images, Etc.).
+
+                  <span class="faq-q">Q: How Do I Upload These Documents?</span>
+                  <ol class="faq-list">
+                    <li>Go To Your Profile > My Vehicle Section.</li>
+                    <li>Enter Details And Upload Required Documents/Photos.</li>
+                    <li>Submit For Review.</li>
+                  </ol>
+
+                  <span class="faq-q"
+                    >Q: How Long Does Vehicle Verification Take?</span
+                  >
+                  If All Details Are Correct And Clear, It Usually Takes 24-48
+                  Hours.
+
+                  <span class="faq-q"
+                    >Q: What If My Verification Is Rejected?</span
+                  >
+                  You Will Receive A Message With The Reason (E.G. Blurred
+                  Image, Expired Insurance). You Can Resubmit Corrected Details
+                  For Another Review.
+                </div>
+              </div>
+            </div>
+
+            <!-- Other Items -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3"
+                >
+                  <span class="faq-icon">💳</span> PAYMENTS CLAIM & RECHARGE
+                </button>
+              </h2>
+              <div
+                id="faq3"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">Details about payments.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4"
+                >
+                  <span class="faq-icon">👤</span> ACCOUNT & PREFERENCES
+                </button>
+              </h2>
+              <div
+                id="faq4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Details about account settings.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq5"
+                >
+                  <span class="faq-icon">🤝</span> OFFER LIFT & FIND LIFT
+                </button>
+              </h2>
+              <div
+                id="faq5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">Details about matching logic.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq6"
+                >
+                  <span class="faq-icon">🛡️</span> SAFETY & EMERGENCY (SOS)
+                </button>
+              </h2>
+              <div
+                id="faq6"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">Details about safety features.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq7"
+                >
+                  <span class="faq-icon">🎁</span> REFER AND EARN
+                </button>
+              </h2>
+              <div
+                id="faq7"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">Details about referrals.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq8"
+                >
+                  <span class="faq-icon">🔐</span> SIGN UP & LOGIN
+                </button>
+              </h2>
+              <div
+                id="faq8"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">Details about authentication.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq9"
+                >
+                  <span class="faq-icon">🌱</span> ECO METER & RANKING
+                </button>
+              </h2>
+              <div
+                id="faq9"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Details about environment impact tracking.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq10"
+                >
+                  <span class="faq-icon">🚌</span> VENDOR SUPPORT & PARTNER HELP
+                  CENTER
+                </button>
+              </h2>
+              <div
+                id="faq10"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">Details for partners.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq11"
+                >
+                  <span class="faq-icon">📄</span> PROFILE & VEHICLE PROFILE
+                  COMPLETION
+                </button>
+              </h2>
+              <div
+                id="faq11"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Details about profile completion.
+                </div>
               </div>
             </div>
           </div>
