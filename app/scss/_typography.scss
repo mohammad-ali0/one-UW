@@ -1,0 +1,128 @@
+/*=================================
+Typography CSS
+*/
+$body-font: 'Sora', sans-serif;
+$heading-font: 'Epilogue', sans-serif;
+body {
+    font-family            : $body-font;
+    color                  : $secondary;
+    font-weight            : 400;
+    font-size              : 16px;
+    line-height            : 32px;
+    background-color       : $white;
+    position               : relative;
+    height                 : 100%;
+    box-sizing             : border-box;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    @include heading;
+}
+
+h1,
+.h1 {
+    @include heading-1;
+}
+
+h2,
+.h2 {
+    @include heading-2;
+}
+
+h3,
+.h3 {
+    @include heading-3;
+}
+
+h4,
+.h4 {
+    @include heading-4;
+}
+
+h5,
+.h5 {
+    @include heading-5;
+}
+
+h6,
+.h6 {
+    @include heading-6;
+}
+
+a {
+    color: $secondary;
+    @include transition;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        @include transition;
+        color: $primary;
+    }
+}
+
+input,
+textarea, .form-control {
+    color     : $secondary;
+    width     : 100%;
+    padding   : 14px 20px;
+    border    : 1px solid $border-color;
+    @include border-radius(5px);
+    &.btn {
+        cursor: auto;
+    }
+
+    &:focus {
+        outline: 0 none;
+        box-shadow: 0 0 0 0.05rem rgba(248, 188, 26,.2);
+    }
+
+    &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color  : $brand-mute;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $border-color;
+    }
+
+    &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: $border-color;
+    }
+}
+img {
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 1280px) and (max-width: 1399px) {
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1260px;
+    }
+}

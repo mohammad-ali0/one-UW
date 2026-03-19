@@ -1,0 +1,53 @@
+/*=================================
+About Section
+*/
+
+section.about-sec {
+	padding: 100px 0 90px;
+	.choose-media{
+		@include media-breakpoint-only(md) {
+			max-width: 80%;
+		}
+	}
+}
+
+.about-details a {
+	text-decoration: underline;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.about-fact {
+	.fact-card {
+		.fact-icon {
+			outline: 0 none;
+			@extend .overly;
+
+			&::before {
+				height: 98px;
+				width: 50px;
+				background-color: transparent;
+				border: 1px solid $white;
+				@include opacity(.45);
+				top: 50%;
+				transform: translateY(-50%);
+				left: -15px;
+				;
+			}
+		}
+
+		.count-box span,
+		p {
+			color: $headings-color;
+		}
+	}
+
+	.fact-bg {
+		@extend .overly;
+
+		&::before {
+			background: url('../images/icons/world-b.png')no-repeat center center / cover;
+			@include opacity(.05);
+		}
+	}
+}

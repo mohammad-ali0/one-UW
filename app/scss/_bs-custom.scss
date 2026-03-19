@@ -1,0 +1,26 @@
+/*=================================
+Bootstrap Cusotmization
+*/
+$primary: #F7B401;
+$secondary: #333931;
+$headings-color: #0A0909;
+$brand-mute: #949494;
+$border-color: #E2E1E1;
+$white: #fff;
+$light-bg: #F8F6F1;
+$body-bg: $white;
+$off-white: #E2E1E1;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light-bg,
+  "mute" : $brand-mute,
+  "info": $white,
+  "dark": #0A0909,
+);
+// Custom.scss
+$card-border-width: 0px;
+$breadcrumb-divider: quote("||");
+// Option A: Include all of Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

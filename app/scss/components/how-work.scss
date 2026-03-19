@@ -1,0 +1,192 @@
+/*=================================
+How Work Section CSS
+*/
+.how-start {
+	overflow: hidden;
+
+	.work-progress {
+		@extend .overly;
+
+		&:before {
+			background: url(../images/progress.svg) no-repeat;
+			height: 11px;
+			z-index: 1;
+			top: 48px;
+			width: 1041px;
+			background-position: 65px 0;
+			background-size: contain;
+
+			@include media-breakpoint-down(md) {
+				background: none;
+				width: 0;
+			}
+
+			@include media-breakpoint-only(md) {
+				background: none;
+				width: 0;
+			}
+
+			@include media-breakpoint-only(lg) {
+				width: 80%;
+			}
+		}
+
+		&>div:last-child .card {
+			margin-bottom: 0;
+		}
+	}
+
+	.card {
+		max-width: 265px;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 60px;
+			max-width: 100%;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin-bottom: 45px;
+		}
+
+		h3 {
+			margin: 50px 0 15px;
+		}
+
+		span {
+			z-index: 2;
+		}
+
+		&:hover .icon {
+			background-color: $primary;
+		}
+	}
+}
+
+.how-start2 {
+	.work-progress {
+		span {
+
+			background-image: url("data:image/svg+xml,%0A%3Csvg width='80' height='70' viewBox='0 0 80 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M70 0H0V60C0 65.5229 4.47715 70 10 70H25C25 61.7157 31.7157 55 40 55C48.2843 55 55 61.7157 55 70H70C75.5229 70 80 65.5229 80 60V10C80 4.47715 75.5229 0 70 0Z' fill='%23F7B401'/%3E%3C/svg%3E%0A");
+			background-repeat: no-repeat;
+			text-align: center;
+			background-position: center center;
+			width: 100%;
+			height: 70px;
+			line-height: 70px;
+			margin: 0 auto;
+			font-size: 24px;
+			font-weight: 700;
+			color: $white;
+			top: 15px;
+			@extend .overly;
+
+			&::before {
+				background: url('../images/icons/line.png')no-repeat;
+				left: 50%;
+				background-position: center;
+
+				@include media-breakpoint-only(lg) {
+					width: 50%;
+					left: 72%;
+					background-size: contain;
+				}
+			}
+
+			&:last-child::before {
+				background: none;
+				width: 0;
+			}
+
+		}
+	}
+
+	.card {
+		padding: 20px;
+		background-color: $light-bg;
+		text-align: center;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 30px;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin-bottom: 30px;
+		}
+
+		h3 {
+			padding-top: 40px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-bottom: 70px;
+	}
+}
+
+.how-start-3 {
+	.step-card {
+		background-color: $light-bg;
+		padding: 30px 30px 10px;
+		max-width: 261px;
+		margin: 0 auto;
+		border-radius: 20px;
+		@include transition();
+		@extend .overly;
+
+		&::before {
+			background: url(../images/step-box.png) no-repeat;
+			z-index: 1;
+			width: 342px;
+			left: -15px;
+			height: 308px;
+			top: -15px;
+			background-size: contain;
+			@include transition();
+
+			@include media-breakpoint-only(lg) {
+				background: transparent;
+			}
+
+		}
+
+		.card-icon {
+			img {
+				width: 44px;
+				height: 44px;
+			}
+		}
+
+		h3 {
+			margin: 20px 0;
+		}
+
+		&:hover {
+			background-color: $primary;
+
+			&::before {
+				background: url('../images/step-box-hover.png')no-repeat;
+
+				@include media-breakpoint-only(lg) {
+					background: transparent;
+				}
+			}
+		}
+
+		@include media-breakpoint-only(lg) {
+			padding: 30px 20px 10px;
+		}
+
+		@include media-breakpoint-only(md) {
+			margin-bottom: 80px;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 40px;
+			max-width: 305px;
+			&::before {
+				background: transparent;
+
+			}
+		}
+	}
+}

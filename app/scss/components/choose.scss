@@ -1,0 +1,263 @@
+/*=================================
+Choose Section CSS
+*/
+.choose-sec {
+	background: $light-bg;
+	background-position: right top;
+	background-repeat: no-repeat;
+
+	.choose-media {
+		margin-top: -155px;
+
+		@include media-breakpoint-only(lg) {
+			margin-top: -390px;
+		}
+	}
+}
+
+.choose2-sec {
+	.car-feature ul li {
+		padding: 14px 30px 14px 40px;
+
+		@include media-breakpoint-only(md) {
+			padding: 14px 30px 14px 35px;
+			margin-left: 8px !important;
+		}
+
+		&::before {
+			left: 14px;
+		}
+	}
+
+	.choose-imgs {
+
+		@extend .overly;
+
+		&::before {
+			background: url('../images/choose-graphic.png')no-repeat top left;
+		}
+
+		img:nth-child(1) {
+			padding-top: 100px;
+			padding-right: 30px;
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: 30px;
+				padding-right: 0;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+	}
+
+}
+
+.car-feature {
+
+	ul {
+		@include list-clear;
+		margin-top: 40px;
+
+		li {
+			display: inline-block;
+			background-color: $light-bg;
+			padding: 14px 50px;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+			font-weight: 500;
+			@include border-radius(10px);
+			cursor: pointer;
+			@extend .overly;
+			@include transition();
+
+			&::before {
+				content: "\f058";
+				font-family: fontawesome;
+				background-color: transparent;
+				color: $primary;
+				left: 20px;
+				top: 13px;
+				@include transition();
+			}
+
+			&:nth-child(even) {
+				margin-left: 20px;
+			}
+
+			&:hover {
+				background-color: $primary;
+				transform: rotate(-5deg);
+
+				&::before {
+					color: $headings-color;
+				}
+			}
+		}
+	}
+}
+
+
+.choose-2 {
+	@extend .overly;
+
+	&::before {
+		background: url('../images/choose-ellipse.png')no-repeat bottom right;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		background: url('../images/choose-ellipse-left.png')no-repeat top left;
+		left: 0;
+		top: 0;
+		width: 510px;
+		height: 830px;
+		z-index: -1;
+
+	}
+
+	.choose-txt {
+
+		.sec-title {
+			margin-bottom: 30px;
+
+			@include media-breakpoint-only(md) {
+				max-width: 80%;
+			}
+
+			@include media-breakpoint-only(lg) {
+				max-width: 80%;
+			}
+		}
+
+		>p {
+			@include media-breakpoint-only(md) {
+				max-width: 80%;
+			}
+
+			@include media-breakpoint-only(lg) {
+				max-width: 80%;
+			}
+		}
+
+		.choose-single {
+			padding: 30px 20px 30px 40px;
+
+			@include media-breakpoint-down(md) {
+				margin-bottom: 20px;
+			}
+
+			i {
+				color: $primary;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			.sec-title {
+				font-size: 30px
+			}
+		}
+	}
+
+	@include media-breakpoint-only(lg) {
+		.choose-option {
+			display: flex;
+			justify-content: space-between;
+
+			>div {
+				flex: 0 0 48%
+			}
+		}
+	}
+
+	@include media-breakpoint-only(md) {
+		.choose-option {
+			display: flex;
+			justify-content: space-between;
+
+			>div {
+				flex: 0 0 48%
+			}
+		}
+	}
+
+}
+
+/**
+	Choose 3 Style
+*/
+
+.choose-3 {
+	@extend .choose-2;
+
+	.choose-media {
+		@extend .overly;
+
+		&::before {
+			width: 219px;
+			background: $primary;
+			left: -30px;
+			height: 111%;
+			top: -30px;
+			@include border-radius(10px);
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			background: url('../images/dot-shape.png');
+			right: -35px;
+			bottom: -30px;
+			width: 190px;
+			height: 186px;
+			z-index: -1;
+		}
+	}
+
+	.choose-info {
+		&:first-child {
+			margin-right: 10px;
+		}
+	}
+}
+
+.popup-box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+
+	a {
+		display: table;
+		text-align: center;
+		color: $white;
+		width: 80px;
+		height: 80px;
+		background-color: $white;
+		color: $primary;
+		font-size: 25px;
+		@include border-radius(50%);
+		@extend .overly;
+
+		&::before {
+			width: 130px;
+			height: 130px;
+			border: 1px solid $white;
+			background-color: transparent;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			@include border-radius(50%);
+		}
+
+		i {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}

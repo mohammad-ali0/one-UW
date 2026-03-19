@@ -1,0 +1,64 @@
+/*=================================
+Account, Signup Section
+*/
+.my-account {
+	.signup-form {
+		padding: 80px;
+			@include media-breakpoint-only(lg) {
+					padding: 80px 30px;
+				}
+							
+		@include media-breakpoint-down(md) {
+			padding: 20px 10px;
+		}
+		.nav-item {
+			button {
+				padding: 14px 20px 12px;
+				border: 1px solid $border-color;
+				background-color: $white;
+				color: $secondary;
+				font-size: 13px;
+				line-height: 1;
+				&.active {
+					background-color: $primary;
+				}
+			}
+		}
+	}
+
+	form {
+		p {
+			color: $brand-mute;
+			margin-top: 30px;
+
+			a {
+				margin-left: 10px;
+			}
+		}
+		.d-flex{
+			font-size: 15px;
+			a{
+				color: #FF0000;
+				text-transform: capitalize;
+			}
+			input{
+				width: auto;
+					padding: 7px ;
+					margin-top: 8px;
+			}
+			label{
+				color: #717171;
+			}
+		}
+	}
+}
+		.ct-bg {
+			background-color: $light-bg;
+			@extend .overly;
+	
+			&::before {
+				background: url('../images/noise.png');
+				@include opacity(0.03);
+				z-index: -1;
+			}
+		}

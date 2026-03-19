@@ -1,0 +1,244 @@
+/*=================================
+Banner Section
+*/
+.banner-sec {
+	padding: 250px 0 100px;
+	background: url('../images/banner-bg.png'), $light-bg;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	@include media-breakpoint-only(md) {
+		padding: 215px 0 100px;
+	}
+	
+	@extend .overly;
+
+	&::before {
+		width: 1200px;
+		height: 1175px;
+		border-radius: 0 0 200px 0;
+		opacity: .95;
+		background: #f7b401;
+		transform: rotate(18deg);
+		right: 44%;
+		top: -48%;
+		left: auto;
+
+		@include media-breakpoint-down(md) {
+			height: 900px;
+		}
+
+		@include media-breakpoint-only(md) {
+			right: 38%;
+			top: -65%;
+		}
+
+		@include media-breakpoint-only(lg) {
+			left: -60%;
+			top: -55%;
+		}
+	}
+@include media-breakpoint-down(sm) {
+	padding: 180px 0 50px;
+
+	&::before {
+		right: 35%;
+		height: 650px;
+	}
+}
+	.banner-txt {
+		max-width: 575px;
+
+		h1 {
+			font-size: 60px;
+			line-height: 74px;
+
+			@include media-breakpoint-only(lg) {
+				font-size: 45px;
+				line-height: 60px;
+			}
+
+			@include media-breakpoint-down(md) {
+				font-size: 36px;
+				line-height: 1.2;
+			}
+
+			@include media-breakpoint-only(md) {
+				font-size: 34px;
+				line-height: 1.2;
+			}
+
+			@include media-breakpoint-down(sm) {
+				font-size: 28px;
+			}
+		}
+
+		p a {
+			font-weight: 600;
+			text-decoration: underline;
+		}
+	}
+}
+
+.banner-cta img {
+	position: relative;
+	top: 45px;
+	left: 100px;
+
+	@include media-breakpoint-only(md) {
+		top: 20px;
+		left: 0;
+	}
+}
+
+.rider-cta {
+	max-width: 160px;
+	padding: 0 10px 10px;
+	margin: 0 auto;
+	left: 120px;
+
+	@extend .overly;
+
+	&::before {
+		background: url('../images/banner-arrow.png')no-repeat top left / contain;
+		left: -115px;
+		top: -50px;
+
+		@include media-breakpoint-down(md) {
+			left: 0;
+			top: -60px;
+			width: 60px;
+		}
+
+		@include media-breakpoint-only(md) {
+			left: 0;
+			top: -70px;
+			width: 70px;
+		}
+
+		@include media-breakpoint-only(lg) {
+			top: -70px;
+			left: -28%;
+			width: 70px;
+		}
+	}
+
+	ul {
+		margin: 0;
+		margin-left: 22px;
+
+	}
+
+	li {
+		display: inline-block;
+		position: relative;
+		margin-left: -20px;
+		outline: 1px solid $white;
+		@include border-radius(50%);
+
+		a {
+			display: block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			@include border-radius(50%);
+
+			&:hover {
+				color: $headings-color;
+			}
+		}
+
+		&:last-child {
+			a {
+				background-color: #f7b401;
+
+			}
+		}
+	}
+}
+
+.pickup-form {
+	.form-group {
+		@extend .overly;
+		overflow: hidden;
+
+		&::before {
+			background: url('../images/location.png')no-repeat;
+			z-index: 1;
+			left: calc(100% - 35px);
+			top: 20px;
+			width: 30px;
+		}
+
+		@include media-breakpoint-down(md) {
+			font-size: 14px;
+
+			input {
+				padding: 8px 10px;
+			}
+
+			&::before {
+				left: calc(100% - 28px);
+				top: 14px;
+			}
+		}
+
+		@include media-breakpoint-only(md) {
+			font-size: 14px;
+
+			&::before {
+				top: 20px;
+
+			}
+
+			input {
+				padding: 15px;
+			}
+		}
+	}
+}
+
+section.banner {
+	padding: 250px 0 150px;
+	background-size: cover;
+	background-position: center center;
+	@extend .overly;
+
+	&::before {
+		background-color: $dark;
+		@include opacity(.65);
+	}
+
+	h1 {
+		font-size: 55px;
+		
+	}
+
+	.pickup-form {
+		.form-group {
+			width: 35%;
+
+			input {
+				padding: 12px 20px;
+				background-color: $primary;
+				border: 1px solid $primary;
+				&::placeholder{
+					color: $dark;
+				}
+			}
+		}
+	}
+		@include media-breakpoint-down(sm) {
+			h1{
+				font-size: 32px;
+			}
+			.pickup-form {
+				.form-group{
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+		}
+}

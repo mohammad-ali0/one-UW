@@ -1,0 +1,50 @@
+/*=================================
+Feature Section CSS
+*/
+.feature-sec{
+	.sec-title{
+		@include media-breakpoint-down(md) {
+			font-size: 32px;
+		}
+	}
+	.card{
+		padding: 30px 40px 30px 30px;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 20px;
+		}
+		@include media-breakpoint-only(lg) {
+			padding: 30px 15px 30px 20px;
+		}
+		@include media-breakpoint-only(xl) {
+			padding: 35px 25px 40px;
+		}
+		h4{
+			font-size: 17px;
+			font-weight: 600;
+			text-transform: capitalize;
+		}
+		p{
+			font-size: 15px;
+		}
+	}
+	.feat-txt{
+		@include media-breakpoint-only(md) {
+			max-width: 90%;
+			margin-top: 60px;
+		}
+		@include media-breakpoint-only(md) {
+			.sec-title{
+				max-width: 90%;
+			}
+		}
+	}
+}
+
+.swiper-container {
+	height: 500px;
+}
+.fact-sec2 {
+	position: relative;
+	z-index: 3;
+	margin-bottom: -100px;
+}

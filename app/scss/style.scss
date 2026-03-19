@@ -1,0 +1,77 @@
+/*********************************************************************************
+
+	Template Name: RideNexa - Ride Sharing Bootstrap5 Template
+	Description: A perfect Template For Ride / Car Share. It comes with nice and clean design.
+
+	Note: This is style css (Sass).
+
+**********************************************************************************/
+
+/**************************************************************
+
+	STYLESHEET INDEXING
+	| 
+	|___ Default Styles
+	|	|___ bs-custom
+	|	|___ mixins
+	|	|___ typography
+	|	|___ header
+	|	|___ footer
+	|	|___ swiper slider
+	|	|___ widget
+	|
+	|
+	|___Sections Styles
+	|	|___ slider
+	|	|___ banner
+	|	|___ how-work
+	|	|___ choose
+	|	|___ services
+	|	|___ fact
+	|	|___ rider
+	|	|___ feature
+	|	|___ blog
+	|	|___ review
+	|	|___ about
+	|	|___ car
+	|	|___ single-post
+	|	|___ account
+	|	|___ pricing
+
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+ 
+ 
+ // IMPORT BASE
+ @import 'bs-custom';
+ @import 'mixins';
+ @import 'typography';
+ @import 'theme';
+
+// IMPORT  COMPONENT 
+
+ // IMPORT THE SECTIONS 
+ @import 'header';
+ @import 'footer';
+ @import 'swiper';
+ @import 'widget';
+
+ // IMPORT THE SECTIONS 
+ @import 'components/slider';
+ @import 'components/banner';
+ @import 'components/how-work';
+ @import 'components/choose';
+ @import 'components/services';
+ @import 'components/fact';
+ @import 'components/rider';
+ @import 'components/feature';
+ @import 'components/blog';
+ @import 'components/review';
+ @import 'components/about';
+ @import 'components/car';
+ @import 'components/single-post';
+ @import 'components/account';
+ @import 'components/pricing';
+ @import 'components/dashboard';
+ 

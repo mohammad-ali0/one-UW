@@ -1,0 +1,64 @@
+/*=================================
+Fact (Counter) Section CSS
+*/
+.fact-sec {
+	.fact-bg {
+		background-color: $headings-color;
+		padding: 66px;
+		background-size: cover;
+		@include media-breakpoint-only(lg) {
+			padding: 60px 10px;
+		}
+		@include media-breakpoint-down(md) {
+			padding: 65px 30px;
+		}
+	}
+
+}
+
+.fact-card {
+	@include media-breakpoint-down(md) {
+		margin-bottom: 60px;
+	}
+	@include media-breakpoint-only(md) {
+		margin-bottom: 45px;
+	}
+	.fact-icon {
+		background: $white;
+		width: 78px;
+		height: 78px;
+		text-align: center;
+		line-height: 78px;
+		outline: 9px solid rgba(255, 255, 255, .15);
+		@include media-breakpoint-only(sm) {
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+		}
+	}
+
+	.count-box {
+		font-size: 25px;
+		color: $primary;
+		span {
+			@include heading;
+			font-size: 39px;
+			color: $white;
+			line-height: 1;
+			font-weight: 700;
+			@include media-breakpoint-only(lg) {
+				font-size: 35px;
+			}
+		}
+	}
+
+	p {
+		margin: 0;
+		font-size: 17px;
+		color: #BCBCBA;
+		text-transform: capitalize;
+		@include media-breakpoint-only(lg) {
+			font-size: 14px;
+		}
+	}
+}

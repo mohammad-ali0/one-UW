@@ -1,0 +1,132 @@
+/*=================================
+Widget CSS
+*/
+.widget.search-widget {
+	input {
+		border: 1px solid $off-white;
+	}
+
+	button {
+		position: absolute;
+		right: 12px;
+		top: 10px;
+		border: 0 none;
+		background: transparent;
+	}
+}
+
+.sidebar {
+		padding-left: 40px;
+		@include media-breakpoint-down(xl) {
+			padding-top: 60px;
+			padding-left: 0;
+		}
+	.widget {
+		margin-bottom: 60px;
+
+		.widget-title {
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+
+		ul {
+			@include list-clear;
+
+			li {
+				margin-bottom: 15px;
+				a {
+					display: block;
+					padding: 15px 25px;
+					border: 1px solid $border-color;
+					text-transform: capitalize;
+					@extend .overly;
+
+					&::before {
+						content: "\f105";
+						font-family: fontawesome;
+						left: auto;
+						right: 20px;
+						background: transparent;
+						top: 15px;
+						width: auto;
+						height: auto;
+					}
+				}
+				&:hover a{
+					background-color: $primary;
+					color: $secondary;
+				}
+			}
+		}
+		.rc-entry{
+			margin-bottom: 15px;
+			border-bottom: 1px solid $off-white;
+			padding-bottom: 10px;
+			&:last-child{
+				margin-bottom: 0;
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+			> a{
+				padding-top: 7px;
+			}
+			.entry-meta{
+				span{
+					font-size: 15px;
+					color: $secondary;
+					i{
+						color: $primary;
+					}
+				}
+			}
+			.entry-title{
+				font-size: 16px;
+				line-height: 23px;
+			}
+			&:hover a{
+				color: $primary;
+			}
+		}
+	}
+
+}
+.widget_tag_cloud a {
+	display: inline-block;
+	font-size: 16px !important;
+	line-height: 1;
+	color: $secondary;
+	padding: 14px 25px;
+	margin: 5px 5px 5px 0px;
+	text-transform: capitalize;
+	background: $off-white;
+	&:hover{
+		background-color: $primary;
+	}
+}
+.social-share2{
+	a{
+		width: 52px;
+		height: 52px;
+		border: 1px solid $off-white;
+		display: inline-table;
+		text-align: center;
+		margin-right: 10px;
+		i{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		&:hover{
+			background-color: $primary;
+			color: $secondary;
+		}
+	}
+}
+.trip-widget{
+	background: url('../images/serv-card-bg.png'), $primary;
+	padding: 60px 30px;
+	.form-group{
+		margin-bottom: 15px;
+		
+	}
+}

@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>HTML5 Template</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&family=Sora:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="font-awesome/css/all.min.css">
+	<!-- Style css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/nice-select2.css">
+	<link rel="stylesheet" href="css/venobox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- header -->
+	<header class="header bg-dark py-3">
+		<nav class="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-2 col-lg-3 col-sm-4">
+						<div class="logo-branding">
+							<button class="d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+								aria-controls="offcanvasRight"><i class="fw-bold fa-solid fa-sliders-h"></i></button>
+							<!-- logo -->
+							<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+						</div>
+					</div>
+					<div class="col-xl-6 d-none d-lg-block col-lg-6">
+						<form class="loc-search search-form position-relative">
+							<input type="search" class="rounded" placeholder="Search location....">
+							<button><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<div class="col-xl-2 offset-xl-2 col-sm-8 col-lg-3">
+						<div class="header-controls">
+							<div class="align-items-center d-flex justify-content-between">
+								<div class="inbox-control">
+									<button data-bs-toggle="modal" data-bs-target="#chatTrigger"><i
+											class="fa-brands fa-rocketchat"></i></button>
+								</div>
+
+								<div class="notify-control dropdown">
+									<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+										aria-expanded="false">
+										<i class="fa-solid fa-bell"></i>
+									</button>
+									<ul class="dropdown-menu">
+										<li class="d-flex">
+											<div class="avatar">
+												<img src="images/avatar.png" alt="Avatar">
+											</div>
+											<div class="notify-status ms-2">
+												<h4 class="h6 mb-0">Trip id #292983-A has started</h4>
+												<span class="d-block small text-end">2 hours ago</span>
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="avatar">
+												<img src="images/avatar.png" alt="Avatar">
+											</div>
+											<div class="notify-status ms-2">
+												<h4 class="h6 mb-0">Trip id #292983-A has Completed</h4>
+												<span class="d-block small text-end">1 hours ago</span>
+											</div>
+										</li>
+										<li class="d-flex">
+											<div class="avatar">
+												<img src="images/avatar.png" alt="Avatar">
+											</div>
+											<div class="notify-status ms-2">
+												<h4 class="h6 mb-0">Trip id #292983-A has started</h4>
+												<span class="d-block small text-end">2 hours ago</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="profile-control dropdown">
+									<button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										<img class="rounded-circle" src="images/avatar.png" alt="Avatar">
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+										<li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+										</li>
+										<li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i>Settings</a>
+										</li>
+										<li><a class="dropdown-item" href="#"><i
+													class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Header End -->
+
+
+	<!-- Main Start -->
+	<main class="main dashboard-main sec-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-xl-2">
+					<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+						aria-labelledby="offcanvasRightLabel">
+						<div class="offcanvas-header d-lg-none mb-3 py-4">
+							<div class="logo"><a class="display-6" href="index.html"><img src="images/logo-alt.png" alt="Logo"></a></div>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+								aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<div class="timeline-navigation">
+								<nav class="menu-wrap me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+									<ul>
+										<li><a href="#" class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+												data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home"
+												aria-selected="true"><img src="images/icons/report.png"
+													alt="Dashboard">Dashboard</a>
+										</li>
+										<li><a class="nav-link" id="v-pills-drivers-tab" data-bs-toggle="pill"
+												data-bs-target="#v-pills-drivers" role="tab" aria-controls="v-pills-drivers"
+												aria-selected="false"><img src="images/icons/license.png" alt="drivers">All
+												Drivers</a>
+										</li>
+
+										<li><a class="nav-link" id="v-pills-info-tab" data-bs-toggle="pill"
+												data-bs-target="#v-pills-info" role="tab" aria-controls="v-pills-info"
+												aria-selected="false">
+												<img src="images/icons/d-driver.png" alt="Group">Personal
+												Info</a>
+										</li>
+										<li><a class="nav-link" id="v-pills-vehicles-tab" data-bs-toggle="pill"
+												data-bs-target="#v-pills-vehicles" role="tab" aria-controls="v-pills-vehicles"
+												aria-selected="false">
+												<img src="images/icons/d-car.png" alt="Page">Vehicles</a>
+										</li>
+										<li><a class="nav-link" id="v-pills-rides-tab" data-bs-toggle="pill"
+												data-bs-target="#v-pills-rides" role="tab" aria-controls="v-pills-rides"
+												aria-selected="false">
+												<img src="images/icons/business-report.png" alt="Event">Rides</a>
+										</li>
+										<li><a class="nav-link" id="v-pills-reports-tab" data-bs-toggle="pill"
+												data-bs-target="#v-pills-reports" role="tab" aria-controls="v-pills-reports"
+												aria-selected="false">
+												<img src="images/icons/report.png" alt="Event">Chats</a>
+										</li>
+										<li><a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+												data-bs-target="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+												aria-selected="false">
+												<img src="images/icons/admin.png" alt="Settings">Settings</a>
+										</li>
+
+									</ul>
+								</nav>
+								<div class="footer-nav">
+									<div class="footer-menu py-2">
+										<ul>
+											<li><a href="about.html">About</a></li>
+											<li><a href="blog-grid.html">Blog</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="book-ride.html">book now</a></li>
+										</ul>
+									</div>
+									<div class="copy-rights text-muted">
+										<p>© 2024 RideNexa</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- col end -->
+
+				<div class="col-xl-10 col-lg-9">
+					<div class="tab-content p-4 rounded-4 bg-light" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+							aria-labelledby="v-pills-home-tab">
+							<div class="row dash-status">
+								<div class="col-xl-3 col-md-6">
+									<div class="card shadow-sm text-center p-4">
+										<span class="icon icon-sm mx-auto bg-light"><img src="images/icons/a-taxi.png"
+												alt=""></span>
+										<div class="display-6 fw-bold mt-3">2,545</div>
+										<small>Total Trips</small>
+										<a href="#" class="btn btn-sm shadow-sm">View Details</a>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="card shadow-sm text-center p-4">
+										<span class="icon icon-sm mx-auto bg-light"><img src="images/icons/a-driver.png" alt=""></span>
+										<div class="display-6 fw-bold mt-3">545</div>
+										<small>Registered Driver</small>
+										<a href="#" class="btn btn-sm shadow-sm">View Details</a>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="card shadow-sm text-center p-4">
+										<span class="icon icon-sm mx-auto bg-light"><img src="images/icons/earning.png" alt=""></span>
+										<div class="display-6 fw-bold mt-3"><span>$</span>35,545</div>
+										<small>Total Revenue</small>
+										<a href="#" class="btn btn-sm shadow-sm">View Details</a>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="bg-transparent text-center">
+										<h3>Total Trips</h3>
+										<div id="chart">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row my-5">
+								<div class="col-lg-12">
+									<h3 class="mb-4">All Times Revenue</h3>
+									<div class="card shadow-sm p-3">
+										<div id="spine-chart"></div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<h3 class="mb-4">Recent Trips</h3>
+									<div class="recent-trips card shadow-sm p-4 table-responsive">
+										<table class="table table-striped mt-4">
+											<thead>
+												<tr>
+													<th scope="col">Trip ID</th>
+													<th scope="col">Date</th>
+													<th scope="col">Time</th>
+													<th scope="col">Driver</th>
+													<th scope="col">Pick Up</th>
+													<th scope="col">Destination</th>
+													<th scope="col">Earnings</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>9am-1pm</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="d-flex align-items-center justify-content-between">
+											<p>Showing 1 to 5 of 10 entries</p>
+											<nav aria-label="navigation">
+												<ul class="pagination">
+													<li class="page-item"><a class="page-link text-mute" href="#">Previous</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">1</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">2</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">3</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">Next</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- Tab End -->
+						<div class="tab-pane fade" id="v-pills-drivers" role="tabpanel" aria-labelledby="v-pills-drivers-tab">
+
+							<div class="row g-4">
+								<h3>All Our Drivers</h3>
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm1.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm2.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm3.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm4.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm2.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm3.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm1.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+								<div class="col-lg-3 col-sm-6">
+									<div class="rider-man rider2 position-relative">
+										<div class="rider-media">
+											<img class="rounded-4" src="images/tm4.png" alt="rider">
+											<div class="rider-meta position-absolute text-white">
+												<h4>Toyouta 458 mx</h4>
+												<ul class="list-unstyled">
+													<li>- Rating: 4.9</li>
+													<li>- Category: Ford</li>
+													<li>- Passenger: 03</li>
+													<li>- Foel: Petrol</li>
+												</ul>
+											</div>
+										</div>
+										<div class="rider-info text-center">
+											<h3 class="h4"><a href="#">Esther Howard</a></h3>
+											<p>(+88)575-24-584</p>
+										</div>
+									</div>
+								</div> <!-- Rider Member End -->
+
+
+							</div>
+						</div><!-- Tab End -->
+						<div class="tab-pane fade" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="d-flex align-items-center justify-content-between mb-4">
+										<h3>Personal Info</h3>
+										<a href="#" class="btn-link"><i class="fa fa-pen-to-square"></i> Edit</a>
+
+									</div>
+									<div class="card rounded-4 bg-light">
+										<form action="#">
+											<div class="form-group half-form">
+												<label for="fname">First Name</label>
+												<input class="form-control" name="fname" type="text" placeholder="Steven" readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="lname">Last Name</label>
+												<input class="form-control" name="lname" type="text" placeholder="Smith" readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="fname">Email</label>
+												<input class="form-control" name="fname" type="email"
+													placeholder="stevesmith20@gmail.com" readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="gender">Gender</label>
+												<input class="form-control" name="gender" type="text" placeholder="Male" readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="fname">Birth Date</label>
+												<input class="form-control" name="fname" type="text" placeholder="1st May 2024"
+													readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="fname">Phone Number</label>
+												<input class="form-control" name="fname" type="text" placeholder="+88-928-282-123"
+													readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="nationality">Nationality</label>
+												<input class="form-control" name="nationality" type="text" placeholder="Bangladeshi"
+													readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="Experience">Experience</label>
+												<input class="form-control" name="Experience" type="text" placeholder="10 Years"
+													readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="fname">Complete Trips</label>
+												<input class="form-control" name="fname" type="text" placeholder="57" readonly>
+											</div>
+											<div class="form-group half-form">
+												<label for="fname">Cancel Trips</label>
+												<input class="form-control" name="fname" type="text" placeholder="12" readonly>
+											</div>
+											<div class="form-group">
+												<label for="yourself">About Yourself</label>
+												<textarea rows="6" class="form-control" name="yourself" type="text" placeholder="12"
+													readonly>I'm Steve Smith, working for rideNexa 10 years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil temporibus deserunt dolore ut, deleniti alias quia eius omnis tenetur et perspiciatis consequatur, aspernatur debitis non sed quisquam harum numquam autem dolor aliquid amet. Sint totam enim explicabo. Ratione accusantium fugiat, atque rem dolor nisi dolore, asperiores aperiam deserunt numquam autem?
+																			</textarea>
+											</div>
+											<div class="text-center mt-4">
+												<button class="btn btn-primary">Update</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div><!-- Tab End -->
+						<div class="tab-pane fade" id="v-pills-vehicles" role="tabpanel"
+							aria-labelledby="v-pills-vehicles-tab">
+							<h3>All Cars</h3>
+							<div class="row g-4">
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="card p-4 bg-info">
+										<img src="images/taxi1.png" alt="Car">
+										<h4 class="car-name mt-4 mb-0">BMW X25S</h4>
+										<span class="text-mute">$.60/km</span>
+									</div>
+								</div>
+								<div class="col-lg-12 text-center">
+									<button class="btn btn-primary mt-3">Load more</button>
+								</div>
+							</div>
+						</div><!-- Tab End -->
+						<div class="tab-pane fade" id="v-pills-rides" role="tabpanel" aria-labelledby="v-pills-rides-tab">
+							<div class="row">
+								<div class="col-lg-12">
+									<h3 class="mb-4">Recent Rides</h3>
+									<div class="recent-trips table-responsive card shadow-sm p-4">
+										<table class="table">
+											<thead>
+												<tr>
+													<th scope="col">Trip ID</th>
+													<th scope="col">Date</th>
+													<th scope="col">Cab Name</th>
+													<th scope="col">Passenger</th>
+													<th scope="col">Pick Up</th>
+													<th scope="col">Destination</th>
+													<th scope="col">Earnings</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>Tesla - 48MT-2 TS</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>Audi - 4876ORT AU</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>BMW - 4876ORT</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>Audi - 4876ORT AU</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>Audi - 4876ORT AU</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>Audi - 4876ORT AU</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>Audi - 4876ORT AU</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00224</th>
+													<td>12th May, 2024</td>
+													<td>Audi - 4876ORT AU</td>
+													<td>Morris Jacob</td>
+													<td>Los Angeles</td>
+													<td>New York</td>
+													<td>$400.50</td>
+												</tr>
+												<tr>
+													<th scope="row">TR00228</th>
+													<td>2 May, 2024</td>
+													<td>Audi - 4876ORT AU</td>
+													<td>Ronald Doe</td>
+													<td>New Jursey</td>
+													<td>Nevada</td>
+													<td>$550.20</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="d-flex align-items-center justify-content-between">
+											<p>Showing 1 to 5 of 10 entries</p>
+											<nav aria-label="navigation">
+												<ul class="pagination">
+													<li class="page-item"><a class="page-link text-mute" href="#">Previous</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">1</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">2</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">3</a></li>
+													<li class="page-item"><a class="page-link text-mute" href="#">Next</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- Tab End -->
+						<div class="tab-pane fade" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
+							<h4>Messages</h4>
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="card p-3">
+										<div class="message-lists">
+											<form action="#" class="position-relative search-form mb-5">
+												<input class="form-control" type="search" placeholder="Search">
+												<button><i class="fa fa-search"></i></button>
+											</form>
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer1.png" alt="">
+															<span class="online-status active"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>Active Now</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer2.png" alt="">
+															<span class="online-status"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>10 min ago</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer2.png" alt="">
+															<span class="online-status"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>10 min ago</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer2.png" alt="">
+															<span class="online-status active"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>Active Now</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer2.png" alt="">
+															<span class="online-status"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>10 min ago</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer2.png" alt="">
+															<span class="online-status active"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>Active Now</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer2.png" alt="">
+															<span class="online-status"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>10 min ago</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+											<div class="single-contact d-flex justify-content-between">
+												<div class="avatar d-flex">
+													<a href="#" class="d-flex align-items-center">
+														<div class="avatar me-2">
+															<img src="images/customer2.png" alt="">
+															<span class="online-status active"></span>
+														</div>
+														<div class="avatar-info ms-2">
+															<h4 class="m-0 h5">Rosie Ryan</h4>
+															<small>10 min ago</small>
+														</div>
+													</a>
+												</div>
+
+												<div class="dropdown">
+													<div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v"></i>
+													</div>
+													<ul class="dropdown-menu">
+														<li><a class="dropdown-item" href="#">Report / Spam</a></li>
+														<li><a class="dropdown-item" href="#">Delete</a></li>
+													</ul>
+												</div>
+											</div> <!-- Single Contact End -->
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-8">
+									<div class="chat-box chat-index card p-3">
+										<div class="d-flex bg-light justify-content-between align-items-center p-2">
+											<div class="avatar d-flex">
+												<a href="#" class="d-flex align-items-center">
+													<div class="avatar me-2">
+														<img class="rounded-circle" src="images/customer2.png" alt="">
+														<span class="online-status active"></span>
+													</div>
+													<div class="name">
+														<h4 class="m-0 h6">Melisa Rosa</h4>
+														<small class="d-block text-mute">Active now</small>
+													</div>
+												</a>
+											</div>
+											<div class="chat-actions">
+												<a href=""><i class="fa fa-phone"></i></a>
+												<a href=""><i class="fa fa-video"></i></a>
+												<a href="message.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+												<a href="#" data-bs-dismiss="modal" aria-label="Close"><i
+														class="fa fa-times fa-lg"></i></a>
+											</div>
+										</div>
+										<div class="message-body mt-4">
+											<div class="modal-inner">
+												<div class="d-flex user-quote">
+													<img src="images/customer2.png" alt="" class="avatar-img me-2">
+													<div class="quote-box">
+														<div class="text-quote">Hi how are you Adams?</div>
+														<div class="text-quote">Hi Abrah, where do you to get a trip?</div>
+													</div>
+												</div>
+												<div class="d-flex user-quote user-reply justify-content-end">
+													<div class="quote-box">
+														<div class="text-quote">Hi Abrah, where do you to get a trip?</div>
+														<div class="text-quote">Is this trip still available, hi Adaams, is this
+															product still
+															available?</div>
+													</div>
+												</div>
+												<div class="d-flex user-quote">
+													<img src="images/avatar.png" alt="" class="avatar-img me-2">
+													<div class="quote-box">
+														<div class="text-quote">Hi how are you Adams? 😄
+															<div class="quote-react">
+																<a href="#"><i class="fa fa-smile"></i></a>
+																<a href="#"><i class="fa fa-share"></i></a>
+																<a class="dropdown-toggle" id="dropdownMenuButton1"
+																	data-bs-toggle="dropdown" aria-expanded="false">
+																	<i class="fa-solid fa-ellipsis-vertical"></i>
+																</a>
+																<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+																	<li><a class="dropdown-item" href="#">
+																			<i class="fa fa-ban"></i> Block</a>
+																	</li>
+																	<li><a class="dropdown-item" href="#"><i class="fa-regular fa-flag"></i>
+																			Report</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="d-flex user-quote user-reply justify-content-end">
+													<div class="quote-box">
+														<img src="images/blog1.jpg" alt="">
+														<small class="text-mute d-block">11.30 am</small>
+													</div>
+												</div>
+												<div class="d-flex user-quote">
+													<img src="images/avatar.png" alt="" class="avatar-img me-2">
+													<div class="chat-react"><img src="images/like-lg.png" alt=""></div>
+												</div>
+											</div>
+											<div class="mt-action mt-3">
+												<!-- Chat textarea -->
+												<div class="d-flex">
+													<textarea class="form-control mb-sm-0 mb-3" placeholder="Type a message" rows="1"
+														spellcheck="false"></textarea>
+													<button class="btn btn-primary rounded-circle ms-3"><i
+															class="fa fa-thumbs-up"></i></button>
+												</div>
+												<!-- Button -->
+												<div class="mt-footer mt-3">
+													<a href="#"><img src="images/image.png" alt=""></a>
+													<a href="#"><img src="images/microphone.png" alt=""></a>
+													<a href="#"><img src="images/gif.png" alt=""></a>
+												</div>
+											</div>
+										</div>
+									</div> <!-- Modal End -->
+								</div>
+							</div>
+
+
+						</div><!-- Tab End -->
+						<div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+							aria-labelledby="v-pills-settings-tab">
+							<div class="profile-settings">
+								<div class="profile-cover position-relative rounded">
+									<div class="profile-header" style="background-image: url('./images/taxi-cover.jpg')">
+										<button class="edit-cover btn btn-sm btn-info"><i class="fa fa-camera me-2"></i>Edit Cover Photo</button>
+										<div class="profile-avatar d-flex align-items-center ps-4">
+											<div class="avatar"><img src="images/tm6.png" alt=""></div>
+											<div class="avatar-details ms-4">
+												<h2 class="text-info">Steven Smith</h2>
+												<button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#edit-profile">Edit
+													Profile<i class="fa fa-pen-to-square"></i></button>
+											</div>
+										</div>
+									</div>
+								</div> <!-- Profile Cover End -->
+								<div class="row mt-4">
+									<div class="col-lg-12">
+										<div class="d-flex align-items-center justify-content-between mb-4">
+											<h3>Personal Info</h3>
+											<a href="#" class="btn-link"><i class="fa fa-pen-to-square"></i> Edit</a>
+								
+										</div>
+										<div class="card rounded-4 bg-light">
+											<form action="#">
+												<div class="form-group half-form">
+													<label for="fname">First Name</label>
+													<input class="form-control" name="fname" type="text" placeholder="Steven" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="lname">Last Name</label>
+													<input class="form-control" name="lname" type="text" placeholder="Smith" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="fname">Email</label>
+													<input class="form-control" name="fname" type="email" placeholder="stevesmith20@gmail.com" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="gender">Gender</label>
+													<input class="form-control" name="gender" type="text" placeholder="Male" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="fname">Birth Date</label>
+													<input class="form-control" name="fname" type="text" placeholder="1st May 2024" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="fname">Phone Number</label>
+													<input class="form-control" name="fname" type="text" placeholder="+88-928-282-123" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="nationality">Nationality</label>
+													<input class="form-control" name="nationality" type="text" placeholder="Bangladeshi" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="Experience">Experience</label>
+													<input class="form-control" name="Experience" type="text" placeholder="10 Years" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="fname">Complete Trips</label>
+													<input class="form-control" name="fname" type="text" placeholder="57" readonly="">
+												</div>
+												<div class="form-group half-form">
+													<label for="fname">Cancel Trips</label>
+													<input class="form-control" name="fname" type="text" placeholder="12" readonly="">
+												</div>
+												<div class="form-group">
+													<label for="yourself">About Yourself</label>
+													<textarea rows="6" class="form-control" name="yourself" type="text" placeholder="12" readonly="">I'm Steve Smith, working for rideNexa 10 years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil temporibus deserunt dolore ut, deleniti alias quia eius omnis tenetur et perspiciatis consequatur, aspernatur debitis non sed quisquam harum numquam autem dolor aliquid amet. Sint totam enim explicabo. Ratione accusantium fugiat, atque rem dolor nisi dolore, asperiores aperiam deserunt numquam autem?
+																											</textarea>
+												</div>
+												<div class="text-center"><button class="btn btn-primary mt-4">Save</button></div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- Tab End -->
+					</div><!-- Tab Content End -->
+				</div>
+
+			</div>
+
+
+		</div>
+		</div>
+	</main>
+	<!-- Main End -->
+	<!-- Modal -->
+	<div class="modal fade chat-box chat-index" id="chatTrigger" tabindex="-1" aria-labelledby="chatTriggerLabel"
+		aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header d-flex bg-primary">
+					<div class="avatar d-flex">
+						<a href="#" class="d-flex align-items-center">
+							<div class="avatar me-2">
+								<img class="rounded-circle" src="images/customer2.png" alt="">
+								<span class="online-status active"></span>
+							</div>
+							<div class="name">
+								<h4 class="m-0 h6">Melisa Rosa</h4>
+								<small class="d-block text-dark">Active now</small>
+							</div>
+						</a>
+					</div>
+					<div class="chat-actions">
+						<a href=""><i class="fa fa-phone"></i></a>
+						<a href=""><i class="fa fa-video"></i></a>
+						<a href="message.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+						<a href="#" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times fa-lg"></i></a>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div class="modal-inner">
+						<div class="d-flex user-quote">
+							<img src="images/customer2.png" alt="" class="avatar-img me-2">
+							<div class="quote-box">
+								<div class="text-quote">Hi how are you Adams?</div>
+								<div class="text-quote">Hi Abrah, where do you to get a trip?</div>
+							</div>
+						</div>
+						<div class="d-flex user-quote user-reply justify-content-end">
+							<div class="quote-box">
+								<div class="text-quote">Hi Abrah, where do you to get a trip?</div>
+								<div class="text-quote">Is this trip still available, hi Adaams, is this product still
+									available?</div>
+							</div>
+						</div>
+						<div class="d-flex user-quote">
+							<img src="images/avatar.png" alt="" class="avatar-img me-2">
+							<div class="quote-box">
+								<div class="text-quote">Hi how are you Adams? 😄
+									<div class="quote-react">
+										<a href="#"><i class="fa fa-smile"></i></a>
+										<a href="#"><i class="fa fa-share"></i></a>
+										<a class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+											aria-expanded="false">
+											<i class="fa-solid fa-ellipsis-vertical"></i>
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+											<li><a class="dropdown-item" href="#"><img src="images/block.png" alt="">
+													Block</a>
+											</li>
+											<li><a class="dropdown-item" href="#"><img src="images/report.png" alt="">
+													Report</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex user-quote user-reply justify-content-end">
+							<div class="quote-box">
+								<img src="images/blog1.jpg" alt="">
+								<small class="text-mute d-block">11.30 am</small>
+							</div>
+						</div>
+						<div class="d-flex user-quote">
+							<img src="images/avatar.png" alt="" class="avatar-img me-2">
+							<div class="chat-react"><img src="images/like-lg.png" alt=""></div>
+						</div>
+					</div>
+					<div class="mt-action mt-3">
+						<!-- Chat textarea -->
+						<div class="d-flex">
+							<textarea class="form-control mb-sm-0 mb-3" placeholder="Type a message" rows="1"
+								spellcheck="false"></textarea>
+							<button class="btn btn-primary rounded-circle ms-3"><i class="fa fa-thumbs-up"></i></button>
+						</div>
+						<!-- Button -->
+						<div class="mt-footer mt-3">
+							<a href="#"><img src="images/image.png" alt=""></a>
+							<a href="#"><img src="images/microphone.png" alt=""></a>
+							<a href="#"><img src="images/gif.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- Modal End -->
+	<!-- Footer Start -->
+	<footer class="footer footer-default">
+		<div class="footer-app">
+			<div class="container">
+				<div class="row align-items-center app-wrap bg-primary">
+					<div class="col-lg-7">
+						<div class="app-txt">
+							<span class="dot-title text-uppercase">download our mobile application</span>
+							<h2 class="sec-title text-uppercase">Get our mobile App for Effortless Rides!</h2>
+						</div>
+					</div>
+					<div class="col-lg-5 d-flex app-cta">
+						<a href="#"><img src="images/app-s2.png" alt=""></a>
+						<a href="#"><img src="images/gplay-s2.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-top sec-padding" style="background-image: url('images/footer-bg.png')">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="d-sm-flex justify-content-between flex-sm-wrap">
+							<div class="widget about-widget">
+								<div class="f-logo mb-5">
+									<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+								</div>
+								<p>Interdum velit laoreet id donec ultrices tincidunt arcu. Tincidunt tortor aliquam nulla
+									facilisi
+									cras fermentum odio
+									eu.</p>
+								<div class="call-txt mt-5">
+									<h4>Toll free <span class="text-primary fs-6">Helpline</span>
+									</h4>
+									<a href="tel:+911234567890">(+91) 1234567890</a>
+								</div>
+							</div> <!-- Widget End -->
+							<div class="widget">
+								<h4 class="text-white text-capitalize mb-5">our services:</h4>
+								<ul class="list-unstyled">
+									<li><a href="#">ride sharing</a></li>
+									<li><a href="#">taxi rentals</a></li>
+									<li><a href="#">intercity service</a></li>
+									<li><a href="#">taxi reserve</a></li>
+									<li><a href="#">web development</a></li>
+									<li><a href="#">ui/ux design</a></li>
+								</ul>
+							</div><!-- Widget End -->
+							<div class="widget contact-widget">
+								<h4 class="text-white text-capitalize mb-5">Contact us</h4>
+								<p>52 Grove Street Garden City, NY 11530 </p>
+								<ul class="list-unstyled">
+									<li>Phone :<a href="#">(+1) 01234567890</a></li>
+									<li>Email :<a href="#"> info@gmail.com</a></li>
+									<li>fax :<a href="#"> info @ride nexa</a></li>
+								</ul>
+							</div><!-- Widget End -->
+							<div class="widget newsletter-widget">
+								<h4 class="text-white text-capitalize mb-5">newsletter:</h4>
+								<form action="#">
+									<input class="form-control" type="email" placeholder="Enter your email">
+									<button class="btn btn-primary my-3">Subscribe Now</button>
+									<div class="form-check mt-4">
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+										<label class="form-check-label text-white" for="flexCheckDefault">
+											I agree to email receive.
+										</label>
+									</div>
+								</form>
+							</div><!-- Widget End -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-6 order-2 order-sm-1">
+						<p class="copy-right mb-0 text-white">© All rights reserved. Made by || <a class="text-primary"
+								href="https://theme-village.com" target="_blank" rel="noopener">theme-village</a>
+						</p>
+					</div>
+					<div class="col-lg-6 col-sm-6 order-1 order-sm-2">
+						<div class="social-share text-sm-end">
+							<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+							<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+							<a href="#"><i class="fa-brands fa-skype"></i></a>
+							<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer End -->
+
+	<!-- Back to top -->
+	<div class="back-top"><i class="fa-solid fa-chevron-up"></i></div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/purecounter_vanilla.js"></script>
+	<script src="js/venobox.min.js"></script>
+	<script src="js/nice-select2.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="js/apex-chart-customize.js"></script>
+
+	<script src="js/custom.js"></script>

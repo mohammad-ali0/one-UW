@@ -1,0 +1,222 @@
+/*=================================
+Services Section CSS
+*/
+.service-card {
+	background: url('../images/serv-card-bg.png'), rgba(255, 255, 255, .7);
+	padding: 45px 20px 35px;
+	cursor: pointer;
+	@include transition();
+
+	h3 {
+		margin: 40px 0 15px;
+		text-transform: capitalize;
+		@extend .text-nowrap;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	h3,
+	p {
+		@include transition();
+	}
+
+	.btn {
+		padding: 15px 20px;
+	}
+
+	&.active,
+	&:hover {
+		background: url('../images/serv-card-bg.png'), $headings-color;
+
+		h3,
+		p {
+			color: $white;
+		}
+
+		a {
+			color: $primary;
+		}
+
+		.btn.btn-dark {
+			background-color: $primary;
+			color: $secondary;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 30px;
+	}
+
+	@include media-breakpoint-only(md) {
+		margin-bottom: 30px;
+	}
+}
+
+.service-list>div:nth-child(even) {
+	margin-top: 65px;
+
+	.service-card {
+		.icon::before {
+			background-image: url("data:image/svg+xml,%0A%3Csvg width='105' height='105' viewBox='0 0 105 105' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='104' height='104' rx='52' stroke='white' stroke-dasharray='6 6'/%3E%3C/svg%3E%0A");
+		}
+
+	}
+}
+
+.service-entry {
+	border-top: 2px solid #d5d5d5;
+	border-bottom: 2px solid #d5d5d5;
+	padding: 30px 0;
+	margin-bottom: 40px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.serv-icon {
+		background: $primary;
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+		display: inline-table;
+		@include border-radius(50%);
+		text-align: center;
+		@include transition();
+	}
+
+	.serv-txt {
+		flex: 0 0 360px;
+		@include media-breakpoint-only(sm) {
+			flex: 0 0 240px;
+		}
+		h3 {
+			text-transform: capitalize;
+		}
+
+		a,
+		p {
+			color: $headings-color;
+		}
+	}
+
+	.btn {
+		border: 0 none;
+	}
+}
+
+.services2 {
+	@extend .overly;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&::before {
+		background-color: $light-bg;
+		@include opacity(.95);
+	}
+
+	@include media-breakpoint-down(md) {
+		.serv-icon {
+			margin-bottom: 20px;
+		}
+
+		.btn {
+			padding: 17px 20px;
+			margin-top: 20px;
+		}
+	}
+
+	.serv-img {
+		@include media-breakpoint-down(md) {
+			margin-top: 20px;
+		}
+
+		@include media-breakpoint-only(md) {
+			display: none;
+		}
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+
+	@include media-breakpoint-only(lg) {
+		.btn {
+			padding: 14px;
+			flex: 0 0 auto;
+		}
+	}
+}
+
+.services-sec3 {
+	.service-card {
+		background-color: #F6F4EF;
+		@extend .overly;
+
+		&::before {
+			background: url('../images/ellipse-white.png')no-repeat top center;
+			@include opacity(0);
+			@include transition();
+		}
+
+		.icon {
+			background-color: $dark;
+
+			&::before {
+				background: url('../images/serv-circle-b.png');
+				@include transition();
+			}
+		}
+
+		&:hover {
+			background-color: $dark;
+
+			&::before {
+				@include opacity(1);
+			}
+
+			.icon {
+				background: $primary;
+
+				&::before {
+					background: url('../images/serv-circle-w.png')no-repeat top center;
+				}
+			}
+		}
+	}
+}
+
+.ride-cta {
+	.rider-form-wrap {
+		padding: 60px 80px;
+
+		@include media-breakpoint-down(md) {
+			padding: 30px;
+		}
+
+		.form-group {
+			@include media-breakpoint-down(md) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.rider-form {
+			display: flex;
+			gap: 20px;
+
+		}
+	}
+
+	.form-title {
+		flex: 0 0 340px;
+	}
+}
+.single-service {
+	h4{
+		font-weight: 600;
+		color: $secondary;
+		font-size: 17px;
+	}
+}

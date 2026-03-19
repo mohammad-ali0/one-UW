@@ -1,0 +1,47 @@
+/*=================================
+Pricing Section CSS
+*/
+.package-item {
+	padding: 0px 30px 40px;
+	@include media-breakpoint-down(xl){
+		margin-bottom: 30px;
+	}
+	span.package-name {
+		background-color: $primary;
+		padding: 7px 15px;
+	}
+
+	ul {
+		text-align: left;
+		padding-left: 20px;
+		li{
+			font-size: 15px;
+			line-height: 25px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.pricing-box {
+		width: 222px;
+		height: 100px;
+		background-color: $white;
+		margin: 35px auto 50px;
+		padding: 20px;
+		line-height: 1;
+		@extend .overly;
+		&::before {
+				background: url(../images/price-border.png) no-repeat center center / contain;
+				height: 120px;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 242px;
+			}
+		h3{
+			line-height: 1;
+			font-size: 40px;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+	}
+}
