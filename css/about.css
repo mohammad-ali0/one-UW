@@ -94,6 +94,7 @@ body {
     transform 0.2s ease,
     background-color 0.2s ease;
   white-space: nowrap;
+  border-bottom: #7ab93b 4px solid;
 }
 
 .btn-add-biz:hover {

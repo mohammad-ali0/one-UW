@@ -1,624 +1,692 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
 
-  <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- DM Sans Font -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!-- Custom CSS -->
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- DM Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/index2.css" />
     <link rel="stylesheet" href="css/about.css" />
-  
-</head>
-<body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm ">
-  <div class="container">
-
-    <a class="navbar-brand" href="#">
-  <img src="./Logo Car Pair/website icon.png" 
-       alt="CharPair Logo"
-       style="max-width: 243px; height: auto;">
-</a>
-
-    <!-- Toggle Button -->
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-
-      <span class="navbar-toggler-icon"></span>
-    </button>
-<!--  -->
-    
-    <!-- Menu -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Service</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">FAQ</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>
-
-        <!-- Button -->
-        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-          <a href="#" class="btn btn-business">Add Business</a>
-        </li>
-
-      </ul>
-    </div>
-
-  </div>
-</nav>
-<section class=" ">
-  <div id="heroCarousel" class="carousel slide hero-section" data-bs-ride="carousel" data-bs-interval="4000">
-
-    <div class="carousel-inner">
-
-      <!-- SLIDE 1 -->
-      <div class="carousel-item active">
-        <div class="container">
-          <div class="row align-items-center">
-
-            <div class="col-lg-6">
-              <div class="hero-tags mb-3">
-                <span>YOUR RIDE</span>
-                <span>YOUR WAY</span>
-                <span>YOUR WORLD</span>
-              </div>
-
-              <h1 class="hero-title">
-                <span class="green">TRAVEL</span> TOGETHER.<br>
-                SAVE <span class="green">TOGETHER</span>
-              </h1>
-
-              <p class="hero-text">
-                offer empty seats on your route and save on expenses while you travel.
-              </p>
-
-              <a href="#" class="btn hero-btn">Add More</a>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="hero-img">
-                <img src="./images/hero-image.png">
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- SLIDE 2 -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h1 class="hero-title">
-                SMART <span class="green">RIDES</span><br>
-                LOW COST
-              </h1>
-              <p class="hero-text">Travel smarter with shared rides.</p>
-              <a href="#" class="btn hero-btn">Explore</a>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="hero-img">
-                <img src="./images/hero-image.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SLIDE 3 -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h1 class="hero-title">
-                ECO <span class="green">FRIENDLY</span>
-              </h1>
-              <p class="hero-text">Reduce carbon footprint.</p>
-              <a href="#" class="btn hero-btn">Learn More</a>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="hero-img">
-                <img src="./images/hero-image.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SLIDE 4 -->
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h1 class="hero-title">
-                DAILY <span class="green">COMMUTE</span>
-              </h1>
-              <p class="hero-text">Best for office travel.</p>
-              <a href="#" class="btn hero-btn">Start Now</a>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="hero-img">
-                <img src="./images/hero-image.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CONTROLS -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-
-  </div>
-
-  <!-- STATS BAR (STATIC BELOW SLIDER) -->
-   <section class="stats-section">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <div class="stats-bar d-flex justify-content-between">
-          <div class="stat-item flex-fill">
-            <div class="stat-number">11300 +</div>
-            <div class="stat-label">Happy Raider</div>
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="#">
+          <div class="logo-wrapper">
+            <img src="./Logo Car Pair/website icon.png" alt="" />
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item flex-fill">
-            <div class="stat-number">10 +</div>
-            <div class="stat-label">Riding Award</div>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active-page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <button class="btn btn-add-biz">Add Business</button>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item flex-fill">
-            <div class="stat-number">5230 +</div>
-            <div class="stat-label">Total Cars</div>
+        </div>
+      </div>
+    </nav>
+    <section class=" ">
+      <div
+        id="heroCarousel"
+        class="carousel slide hero-section"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <div class="carousel-inner">
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="hero-tags mb-3">
+                    <span>YOUR RIDE</span>
+                    <span>YOUR WAY</span>
+                    <span>YOUR WORLD</span>
+                  </div>
+
+                  <h1 class="hero-title">
+                    <span class="green">TRAVEL</span> TOGETHER.<br />
+                    SAVE <span class="green">TOGETHER</span>
+                  </h1>
+
+                  <p class="hero-text">
+                    offer empty seats on your route and save on expenses while
+                    you travel.
+                  </p>
+
+                  <a href="#" class="btn hero-btn">Add More</a>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="hero-img">
+                    <img src="./images/hero-image.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item flex-fill">
-            <div class="stat-number">2220 +</div>
-            <div class="stat-label">5 Star Reviews</div>
+
+          <!-- SLIDE 2 -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <h1 class="hero-title">
+                    SMART <span class="green">RIDES</span><br />
+                    LOW COST
+                  </h1>
+                  <p class="hero-text">Travel smarter with shared rides.</p>
+                  <a href="#" class="btn hero-btn">Explore</a>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="hero-img">
+                    <img src="./images/hero-image.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3 -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <h1 class="hero-title">
+                    ECO <span class="green">FRIENDLY</span>
+                  </h1>
+                  <p class="hero-text">Reduce carbon footprint.</p>
+                  <a href="#" class="btn hero-btn">Learn More</a>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="hero-img">
+                    <img src="./images/hero-image.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 4 -->
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <h1 class="hero-title">
+                    DAILY <span class="green">COMMUTE</span>
+                  </h1>
+                  <p class="hero-text">Best for office travel.</p>
+                  <a href="#" class="btn hero-btn">Start Now</a>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="hero-img">
+                    <img src="./images/hero-image.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTROLS -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- STATS BAR (STATIC BELOW SLIDER) -->
+      <section class="stats-section">
+        <div class="container">
+          <div class="stats-bar d-flex justify-content-between">
+            <div class="stat-item flex-fill">
+              <div class="stat-number">11300 +</div>
+              <div class="stat-label">Happy Raider</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item flex-fill">
+              <div class="stat-number">10 +</div>
+              <div class="stat-label">Riding Award</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item flex-fill">
+              <div class="stat-number">5230 +</div>
+              <div class="stat-label">Total Cars</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item flex-fill">
+              <div class="stat-number">2220 +</div>
+              <div class="stat-label">5 Star Reviews</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="how-section">
+      <div class="container text-center">
+        <!-- TITLE -->
+        <h2 class="section-title">HOW TO GET STARTED</h2>
+        <p class="section-subtitle">
+          getting started with charpair is simple and quick. the platform is
+          designed to help users connect easily while keeping cost sharing
+          clear, fair, and transparent.
+        </p>
+
+        <!-- CARDS -->
+        <div class="services-grid-container">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img
+                  src="https://api.dicebear.com/7.x/shapes/svg?seed=service1&backgroundColor=f0f0f0"
+                  alt="Intercity Rides"
+                  onerror="
+                    this.src =
+                      'https://via.placeholder.com/152x100?text=Service+Icon'
+                  "
+                />
+                <h5>Intercity Rides</h5>
+                <p>
+                  Planning a trip to another city? Skip expensive last-minute
+                  tickets and travel comfortably with city-to-city carpool
+                  rides.
+                </p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img
+                  src="https://api.dicebear.com/7.x/shapes/svg?seed=service2&backgroundColor=f0f0f0"
+                  alt="Find Lift"
+                  onerror="
+                    this.src =
+                      'https://via.placeholder.com/152x100?text=Service+Icon'
+                  "
+                />
+                <h5>Find Lift</h5>
+                <p>
+                  Finding a ride shouldn't feel complicated. Connect with people
+                  already travelling along your route and reserve a seat with
+                  confidence.
+                </p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img
+                  src="https://api.dicebear.com/7.x/shapes/svg?seed=service3&backgroundColor=f0f0f0"
+                  alt="Offer Lift"
+                  onerror="
+                    this.src =
+                      'https://via.placeholder.com/152x100?text=Service+Icon'
+                  "
+                />
+                <h5>Offer Lift</h5>
+                <p>
+                  Driving alone? Turn your empty seats into savings. Offer a
+                  lift to verified co-travellers heading along your route and
+                  reduce fuel costs.
+                </p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="service-card">
+                <img
+                  src="https://api.dicebear.com/7.x/shapes/svg?seed=service4&backgroundColor=f0f0f0"
+                  alt="Add Business"
+                  onerror="
+                    this.src =
+                      'https://via.placeholder.com/152x100?text=Service+Icon'
+                  "
+                />
+                <h5>Add Business</h5>
+                <p>
+                  Vehicle-related businesses can list their services. Reach
+                  nearby users easily for car wash, servicing, and detailing
+                  needs.
+                </p>
+                <a href="#" class="btn service-btn">View Details</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-</section>
 
+    <section class="why-section">
+      <div class="container">
+        <div class="why-box">
+          <div class="row align-items-center g-5">
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6">
+              <div class="why-img">
+                <img src="./images/why-chooseus.png" alt="" />
+              </div>
+            </div>
 
-<section class="how-section">
-  <div class="container text-center">
+            <!-- RIGHT CONTENT -->
+            <div class="col-lg-6">
+              <h3 class="why-title">WHY CHOOSE CHARPAIR?</h3>
 
-    <!-- TITLE -->
-    <h2 class="section-title">HOW TO GET STARTED</h2>
-    <p class="section-subtitle">
-      getting started with charpair is simple and quick. the platform is designed to help users
-      connect easily while keeping cost sharing clear, fair, and transparent.
-    </p>
+              <p class="why-text">
+                CharPair has created to solve a common problem. Daily travel
+                becomes expensive and inefficient when done alone. By sharing
+                journeys with people traveling in the same direction, users save
+                money and reduce unnecessary travel.
+              </p>
 
-    <!-- CARDS -->
-    <div class="row g-4 mt-4">
+              <h5 class="why-subtitle">What Makes CharPair Different:</h5>
 
-      <!-- CARD 1 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="how-card">
-          <img src="./images/card1.png">
-          <h5>CREATE YOUR ACCOUNT</h5>
-          <p>
-            sign up on the charpair app using your mobile number and complete basic verification.
-          </p>
-        </div>
-      </div>
+              <!-- LIST -->
+              <ul class="why-list">
+                <li>
+                  <img src="./images/icon1.png" />
+                  COST-SHARING, COMFORTABLE TRANSPORT
+                </li>
 
-      <!-- CARD 2 (ACTIVE) -->
-      <div class="col-lg-3 col-md-6">
-        <div class="how-card active">
-          <img src="./images/card2.png">
-          <h5>OFFER OR FIND A RIDE</h5>
-          <p>
-            list available rides or search for rides that match your travel direction and timing.
-          </p>
-        </div>
-      </div>
+                <li>
+                  <img src="./images/route-icon.png" />
+                  SMART ROUTE-BASED RIDE MATCHING
+                </li>
 
-      <!-- CARD 3 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="how-card">
-          <img src="./images/card3.png">
-          <h5>MATCH AND CONNECT</h5>
-          <p>
-            users connect after mutual acceptance. pickup points and details are finalized.
-          </p>
-        </div>
-      </div>
+                <li>
+                  <img src="./images/transpaent-icon.png" />
+                  TRANSPARENT AND FAIR TRAVEL CONTRIBUTIONS
+                </li>
 
-      <!-- CARD 4 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="how-card">
-          <img src="./images/card.png">
-          <h5>TRAVEL TOGETHER</h5>
-          <p>
-            enjoy a smooth journey and reach your destination comfortably.
-          </p>
-        </div>
-      </div>
+                <li>
+                  <img src="./images/map-icon.png" />
+                  DESIGNED FOR DAILY AND INTERCITY JOURNEYS
+                </li>
+              </ul>
 
-    </div>
-
-  </div>
-</section>
-<section class="why-section">
-  <div class="container">
-
-    <div class="why-box">
-      <div class="row align-items-center g-5">
-
-        <!-- LEFT IMAGE -->
-        <div class="col-lg-6">
-          <div class="why-img">
-            <img src="./images/why-chooseus.png" alt="">
+              <!-- BUTTON -->
+              <a href="#" class="btn why-btn">Explore How It Works</a>
+            </div>
           </div>
         </div>
-
-        <!-- RIGHT CONTENT -->
-        <div class="col-lg-6">
-
-          <h3 class="why-title">WHY CHOOSE CHARPAIR?</h3>
-
-          <p class="why-text">
-            CharPair has created to solve a common problem. Daily travel becomes expensive
-            and inefficient when done alone. By sharing journeys with people traveling in the
-            same direction, users save money and reduce unnecessary travel.
-          </p>
-
-          <h5 class="why-subtitle">What Makes CharPair Different:</h5>
-
-          <!-- LIST -->
-          <ul class="why-list">
-            <li>
-              <img src="./images/icon1.png">
-              COST-SHARING, COMFORTABLE TRANSPORT
-            </li>
-
-            <li>
-              <img src="./images/route-icon.png">
-              SMART ROUTE-BASED RIDE MATCHING
-            </li>
-
-            <li>
-              <img src="./images/transpaent-icon.png">
-              TRANSPARENT AND FAIR TRAVEL CONTRIBUTIONS
-            </li>
-
-            <li>
-              <img src="./images/map-icon.png">
-              DESIGNED FOR DAILY AND INTERCITY JOURNEYS
-            </li>
-          </ul>
-
-          <!-- BUTTON -->
-          <a href="#" class="btn why-btn">Explore How It Works</a>
-
-        </div>
-
       </div>
-    </div>
-
-  </div>
-</section>
-<section class="service-section">
-  <div class="container">
-
-    <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel" >
-
-      <!-- HEADER -->
-      <div class="service-header">
-        <h3>WE CARE FOR YOUR TRAVEL ALONG<br>WITH YOUR VEHICLE</h3>
-        <p>
-          Discover the most used and trusted services on CharPair, designed to make your travel and vehicle needs easier.
-        </p>
-
-        <!-- ARROWS -->
-        <div class="carousel-nav">
-          <button data-bs-target="#serviceCarousel" data-bs-slide="prev">
-            ‹
-          </button>
-          <button data-bs-target="#serviceCarousel" data-bs-slide="next">
-            ›
-          </button>
-        </div>
-      </div>
-
-      <!-- SLIDES -->
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <div class="row g-4">
-
-            <!-- CARD -->
-            <div class="col-lg-3 col-md-6">
-              <div class="service-card">
-                <img src="./images/service1.png">
-                <h5>Intercity Rides</h5>
-                <p>Planning a trip to another city  Skip expensive last-minute tickets and travel comfortably with city-to-city carpool rides. Charpair connects drivers and passengers travelling between cities for affordable, convenient, and reliable intercity travel.</p>
-                <a href="#" class="btn service-btn">View Details</a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="service-card">
-                <img src="./images/service2.png">
-                <h5>Find Lift</h5>
-                <p>Finding a ride for your travel shouldn’t feel complicated.  With Charpair, you can connect with people already travelling along your route and reserve a seat with confidence. Every profile is verified, so you know exactly who you’re travelling with.</p>
-                <a href="#" class="btn service-btn">View Details</a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="service-card">
-                <img src="./images/service3.png">
-                <h5>Offer Lift</h5>
-                <p>Driving alone? Turn your empty seats into savings.  Offer a lift to verified co-travellers heading along your route and reduce your fuel costs instantly.</p>
-                <a href="#" class="btn service-btn">View Details</a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="service-card">
-                <img src="./images/service4.png">
-                <h5>Add Business</h5>
-                <p>Vehicle-related businesses can list their services on CharPair and reach nearby users easily. From car wash, servicing, oil change, and detailing to seat covers and accessories—connect with customers looking for trusted automotive services.</p>
-                <a href="#" class="btn service-btn">View Details</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="promise-section">
-  <div class="container text-center">
-
-    <!-- TITLE -->
-    <h2 class="promise-title">THE 4 PROMISES OF CHARPAIR</h2>
-
-    <p class="promise-subtitle">
-      charpair is built on four core principles that define our commitment to you.
-      every feature, every interaction, and every journey on our platform is designed around these values.
-    </p>
-
-    <!-- CARDS -->
-    <div class="row g-4 mt-4">
-
-      <!-- CARD 1 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="promise-card">
-          <img src="./images/promise1.png">
-          <h5>EASY</h5>
-          <p>
-            Simple, intuitive interface that anyone can use. No complicated steps, no unnecessary features. Just straightforward ride sharing and cost splitting that takes minutes to set up and use.
-          </p>
-        </div>
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="promise-card">
-          <img src="./images/promise2.png">
-          <h5>ECONOMIC</h5>
-          <p>
-            Save money on every journey. Share fuel costs, toll expenses, and travel charges with others heading the same way. Your wallet gets relief, and the environment benefits too.
-          </p>
-        </div>
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="promise-card">
-          <img src="./images/promise3.png">
-          <h5>ECO-FRIENDLY</h5>
-          <p>
-            Reduce your carbon footprint. By sharing rides instead of traveling solo, you contribute to fewer vehicles on the road and lower emissions. Travel responsibly while saving money.
-          </p>
-        </div>
-      </div>
-
-      <!-- CARD 4 -->
-      <div class="col-lg-3 col-md-6">
-        <div class="promise-card">
-          <img src="./images/promise4.png">
-          <h5>COMFORTABLE</h5>
-          <p>
-            Travel with ease and confidence. Private vehicles, verified drivers, and riders you trust. Enjoy comfort without compromising on safety or convenience during your journey.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<section class="safety-section">
-  <div class="container">
-
-    <div class="safety-box">
-      <div class="row align-items-center">
-
-        <!-- LEFT IMAGE -->
-        <div class="col-lg-6">
-          <div class="safety-img">
-            <img src="./images/safety-banner.png" alt="">
-          </div>
-        </div>
-
-        <!-- RIGHT CONTENT -->
-        <div class="col-lg-6">
-          <div class="safety-content">
-
-            <h2>SAFETY AND TRUST<br>TRAVEL WITH CONFIDENCE</h2>
-
-            <p class="mt-3">
-              Safety and transparency are at the core of CharPair. While CharPair does not provide
-              transport services, it offers tools that help users make informed decisions before and during a ride.
+    </section>
+    <section class="service-section">
+      <div class="container">
+        <div
+          id="serviceCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- HEADER -->
+          <div class="service-header">
+            <h3>WE CARE FOR YOUR TRAVEL ALONG<br />WITH YOUR VEHICLE</h3>
+            <p>
+              Discover the most used and trusted services on CharPair, designed
+              to make your travel and vehicle needs easier.
             </p>
 
-            <!-- FEATURES -->
-            <div class="row mt-4">
-
-              <div class="col-md-6 d-flex">
-                <span class="dot"></span>
-                <div>
-                  <h6>SAFETY FIRST</h6>
-                  <p>verified drivers and secure rides — your safety always comes first.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6 d-flex">
-                <span class="dot"></span>
-                <div>
-                  <h6>AFFORDABLE PRICES</h6>
-                  <p>enjoy cost-effective travel with transparent pricing and no hidden charges.</p>
-                </div>
-              </div>
-
+            <!-- ARROWS -->
+            <div class="carousel-nav">
+              <button data-bs-target="#serviceCarousel" data-bs-slide="prev">
+                ‹
+              </button>
+              <button data-bs-target="#serviceCarousel" data-bs-slide="next">
+                ›
+              </button>
             </div>
+          </div>
 
+          <!-- SLIDES -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <!-- CARD -->
+                <div class="col-lg-3 col-md-6">
+                  <div class="service-card">
+                    <img src="./images/service1.png" />
+                    <h5>Intercity Rides</h5>
+                    <p>
+                      Planning a trip to another city Skip expensive last-minute
+                      tickets and travel comfortably with city-to-city carpool
+                      rides. Charpair connects drivers and passengers travelling
+                      between cities for affordable, convenient, and reliable
+                      intercity travel.
+                    </p>
+                    <a href="#" class="btn service-btn">View Details</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="service-card">
+                    <img src="./images/service2.png" />
+                    <h5>Find Lift</h5>
+                    <p>
+                      Finding a ride for your travel shouldn’t feel complicated.
+                      With Charpair, you can connect with people already
+                      travelling along your route and reserve a seat with
+                      confidence. Every profile is verified, so you know exactly
+                      who you’re travelling with.
+                    </p>
+                    <a href="#" class="btn service-btn">View Details</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="service-card">
+                    <img src="./images/service3.png" />
+                    <h5>Offer Lift</h5>
+                    <p>
+                      Driving alone? Turn your empty seats into savings. Offer a
+                      lift to verified co-travellers heading along your route
+                      and reduce your fuel costs instantly.
+                    </p>
+                    <a href="#" class="btn service-btn">View Details</a>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="service-card">
+                    <img src="./images/service4.png" />
+                    <h5>Add Business</h5>
+                    <p>
+                      Vehicle-related businesses can list their services on
+                      CharPair and reach nearby users easily. From car wash,
+                      servicing, oil change, and detailing to seat covers and
+                      accessories—connect with customers looking for trusted
+                      automotive services.
+                    </p>
+                    <a href="#" class="btn service-btn">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
+    </section>
 
-  </div>
-</section>
+    <section class="promise-section">
+      <div class="container text-center">
+        <!-- TITLE -->
+        <h2 class="promise-title">THE 4 PROMISES OF CHARPAIR</h2>
 
-<section class="testimonial-section">
-  <div class="container text-center">
+        <p class="promise-subtitle">
+          charpair is built on four core principles that define our commitment
+          to you. every feature, every interaction, and every journey on our
+          platform is designed around these values.
+        </p>
 
-    <!-- TITLE -->
-    <h2 class="test-title">LOVED BY OUR COMMUNITY</h2>
-    <p class="test-sub">
-      Feedback from early users who believe in shared travel, savings, and responsible commuting.
-    </p>
-
-    <!-- CAROUSEL -->
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-
-      <div class="carousel-inner">
-
-        <!-- SLIDE 1 -->
-        <div class="carousel-item active">
-          <div class="row g-4 justify-content-center">
-
-            <!-- CARD -->
-            <div class="col-lg-4 col-md-6">
-              <div class="test-card">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “I started offering rides on CharPair and it’s been fantastic to reduce fuel expenses.
-                  The cost-sharing model is fair and transparent.”
-                </p>
-                <div class="user">
-                  <img src="https://i.pravatar.cc/50?img=1">
-                  <div>
-                    <h6>Arjun Verma</h6>
-                    <span>Chandigarh Driver</span>
-                  </div>
-                </div>
-              </div>
+        <!-- CARDS -->
+        <div class="row g-4 mt-4">
+          <!-- CARD 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="promise-card">
+              <img src="./images/promise1.png" />
+              <h5>EASY</h5>
+              <p>
+                Simple, intuitive interface that anyone can use. No complicated
+                steps, no unnecessary features. Just straightforward ride
+                sharing and cost splitting that takes minutes to set up and use.
+              </p>
             </div>
+          </div>
 
-            <!-- CARD -->
-            <div class="col-lg-4 col-md-6">
-              <div class="test-card">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “Great platform! I met interesting people and saved money on daily rides.
-                  Highly recommended for city travel.”
-                </p>
-                <div class="user">
-                  <img src="https://i.pravatar.cc/50?img=2">
-                  <div>
-                    <h6>Rahul Sharma</h6>
-                    <span>Delhi User</span>
-                  </div>
-                </div>
-              </div>
+          <!-- CARD 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="promise-card">
+              <img src="./images/promise2.png" />
+              <h5>ECONOMIC</h5>
+              <p>
+                Save money on every journey. Share fuel costs, toll expenses,
+                and travel charges with others heading the same way. Your wallet
+                gets relief, and the environment benefits too.
+              </p>
             </div>
+          </div>
 
-            <!-- CARD -->
-            <div class="col-lg-4 col-md-6">
-              <div class="test-card">
-                <div class="stars">★★★★★</div>
-                <p>
-                  “CharPair makes travel easy, affordable, and eco-friendly.
-                  I love the simplicity and safety features.”
-                </p>
-                <div class="user">
-                  <img src="https://i.pravatar.cc/50?img=3">
-                  <div>
-                    <h6>Sneha Patel</h6>
-                    <span>Mumbai Rider</span>
-                  </div>
-                </div>
-              </div>
+          <!-- CARD 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="promise-card">
+              <img src="./images/promise3.png" />
+              <h5>ECO-FRIENDLY</h5>
+              <p>
+                Reduce your carbon footprint. By sharing rides instead of
+                traveling solo, you contribute to fewer vehicles on the road and
+                lower emissions. Travel responsibly while saving money.
+              </p>
             </div>
+          </div>
 
+          <!-- CARD 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="promise-card">
+              <img src="./images/promise4.png" />
+              <h5>COMFORTABLE</h5>
+              <p>
+                Travel with ease and confidence. Private vehicles, verified
+                drivers, and riders you trust. Enjoy comfort without
+                compromising on safety or convenience during your journey.
+              </p>
+            </div>
           </div>
         </div>
-
-        <!-- ADD MORE SLIDES SAME WAY -->
-
       </div>
+    </section>
+    <section class="safety-section">
+      <div class="container">
+        <div class="safety-box">
+          <div class="row align-items-center">
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6">
+              <div class="safety-img">
+                <img src="./images/safety-banner.png" alt="" />
+              </div>
+            </div>
 
-      <!-- INDICATORS -->
-      <div class="carousel-indicators mt-4">
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+            <!-- RIGHT CONTENT -->
+            <div class="col-lg-6">
+              <div class="safety-content">
+                <h2>SAFETY AND TRUST<br />TRAVEL WITH CONFIDENCE</h2>
+
+                <p class="mt-3">
+                  Safety and transparency are at the core of CharPair. While
+                  CharPair does not provide transport services, it offers tools
+                  that help users make informed decisions before and during a
+                  ride.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="row mt-4">
+                  <div class="col-md-6 d-flex">
+                    <span class="dot"></span>
+                    <div>
+                      <h6>SAFETY FIRST</h6>
+                      <p>
+                        verified drivers and secure rides — your safety always
+                        comes first.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-flex">
+                    <span class="dot"></span>
+                    <div>
+                      <h6>AFFORDABLE PRICES</h6>
+                      <p>
+                        enjoy cost-effective travel with transparent pricing and
+                        no hidden charges.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <section class="testimonial-section">
+      <div class="container text-center">
+        <!-- TITLE -->
+        <h2 class="test-title">LOVED BY OUR COMMUNITY</h2>
+        <p class="test-sub">
+          Feedback from early users who believe in shared travel, savings, and
+          responsible commuting.
+        </p>
 
-  </div>
-</section>
+        <!-- CAROUSEL -->
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+              <div class="row g-4 justify-content-center">
+                <!-- CARD -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="test-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                      “I started offering rides on CharPair and it’s been
+                      fantastic to reduce fuel expenses. The cost-sharing model
+                      is fair and transparent.”
+                    </p>
+                    <div class="user">
+                      <img src="https://i.pravatar.cc/50?img=1" />
+                      <div>
+                        <h6>Arjun Verma</h6>
+                        <span>Chandigarh Driver</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-<!-- Download Our Mobile Application Section -->
+                <!-- CARD -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="test-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                      “Great platform! I met interesting people and saved money
+                      on daily rides. Highly recommended for city travel.”
+                    </p>
+                    <div class="user">
+                      <img src="https://i.pravatar.cc/50?img=2" />
+                      <div>
+                        <h6>Rahul Sharma</h6>
+                        <span>Delhi User</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="col-lg-4 col-md-6">
+                  <div class="test-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                      “CharPair makes travel easy, affordable, and eco-friendly.
+                      I love the simplicity and safety features.”
+                    </p>
+                    <div class="user">
+                      <img src="https://i.pravatar.cc/50?img=3" />
+                      <div>
+                        <h6>Sneha Patel</h6>
+                        <span>Mumbai Rider</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ADD MORE SLIDES SAME WAY -->
+          </div>
+
+          <!-- INDICATORS -->
+          <div class="carousel-indicators mt-4">
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Our Mobile Application Section -->
     <section class="download-app-section">
       <div class="container">
         <div class="download-container">
@@ -767,6 +835,10 @@
         </div>
       </div>
     </div>
-</body>
+  </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
