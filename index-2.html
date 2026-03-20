@@ -9,673 +9,10 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- DM Sans Font -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    .navbar {
-      padding: 16px 0;
-      background: #fff;
-    }
-
-  .navbar-brand img {
-  max-width: 243px;
-}
-
-@media (max-width: 768px) {
-  .navbar-brand img {
-    max-width: 180px;
-  }
-}
-
-@media (max-width: 576px) {
-  .navbar-brand img {
-    max-width: 150px;
-  }
-}
-p{
-  font-family: "DM Sans", sans-serif;
-}
-    .nav-link {
-       font-family: "DM Sans", sans-serif;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 1.3;
-      color: #334155 !important;
-      margin: 0 10px;
-      transition: 0.3s;
-    }
-
-    .nav-link:hover {
-      color: #22c55e !important;
-    }
-
- .btn-business {
-  font-family: 'Brice', sans-serif;
-  font-weight: 700;
-
-  font-size: 19px;
-  line-height: 1; /* 100% */
-
-  color: #ffffff;
-
-  background-color: #324896;
-
-  border-radius: 999px;
-  padding: 12px 20px;
-
-  border: none;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 0 4px 0 #7AB93B;
-
-  transition: all 0.2s ease;
-}
-
-/* Hover */
-.btn-navbar:hover {
-  background-color: #2b3f80;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 0 #7AB93B;
-}
-
-/* Click */
-.btn-navbar:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 #7AB93B;
-}
-
-    .navbar-toggler {
-      border: none;
-    }
-
-    .navbar-toggler:focus {
-      box-shadow: none;
-    }
-    /* HERO */
-.hero-section {
-font-family: 'Brice''sans-serif';
-  padding: 80px 0 120px;
-}
-
-/* TAGS */
-.hero-tags span {
-  border: 1px solid #B2D093;
-  padding: 10px 16px;
-  border-radius: 150px;
-  margin-right: 8px;
-  font-size: 14px;
-  color: #073569;
-  display: inline-block;
-}
-
-/* TITLE */
-.hero-title {
-  font-family: 'Brice', sans-serif;
-  font-weight: 600;
-  font-size: 69px;
-  line-height: 75px;
-  text-transform: uppercase;
-  color: #073569;
-}
-
-.hero-title .green {
-  color: #7AB93B;
-}
-
-/* TEXT */
-.hero-text {
-  font-size: 27px;
-  line-height: 36px;
-  color: #334155;
-  margin-top: 15px;
-}
-
-/* BUTTON */
-.hero-btn {
-  margin-top: 20px;
-  background: #324896;
-  color: #fff;
-  padding: 12px 22px;
-  border-radius: 50px;
-  box-shadow: 0 4px 0 #7AB93B;
-}
-
-/* IMAGE */
-.hero-img {
-  border-radius: 70px;
-  overflow: hidden;
-}
-
-.hero-img img {
-  width: 100%;
-  height: auto;
-}
-
-/* STATS */
-.stats-bar {
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index2.css" />
+    <link rel="stylesheet" href="css/about.css" />
   
-  background: linear-gradient(90deg, #7AB93B, #073569);
-  border-radius: 20px;
-  padding: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-}
-
-.stat h4 {
-  font-weight: 700;
-}
-
-.stat p {
-  font-size: 13px;
-  margin: 0;
-}
-
-.divider {
-  width: 1px;
-  height: 40px;
-  background: rgba(255,255,255,0.4);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .hero-title{
-    font-size: 36px;
-    line-height: 42px;
-  }
-
-  .hero-text{
-    font-size: 18px;
-  }
-
-  .stats-bar{
-    flex-direction: column;
-    gap: 15px;
-    margin-top: -40px;
-  }
-
-  .divider{
-    display:none;
-  }
-}
-.how-section {
-  padding: 80px 0;
-  background: #f8fafc;
-}
-
-/* TITLE */
-.section-title {
-  font-family: 'Brice', sans-serif;
-  font-size: 32px;
-  color: #073569;
-  font-weight: 700;
-}
-
-.section-subtitle {
-  max-width: 700px;
-  margin: 10px auto;
-  font-size: 14px;
-  color: #6b7280;
-}
-
-/* CARD */
-.how-card {
-  background: #fff;
-  padding: 30px 20px;
-  border-radius: 20px;
-  border: 1px solid #e5e7eb;
-  transition: 0.3s;
-  height: 100%;
-}
-
-/* ICON */
-.how-card img {
-  width: 199px;
-  margin-bottom: 15px;
-}
-
-/* TEXT */
-.how-card h5 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #073569;
-}
-
-.how-card p {
-  font-size: 12px;
-  color: #6b7280;
-  margin-top: 8px;
-}
-
-/* ACTIVE CARD */
-
-/* HOVER */
-.how-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-  border: 2px solid #3b82f6;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .section-title{
-    font-size: 24px;
-  }
-}
-.why-section {
-  
-  background: #f5f7fb;
-}
-
-/* MAIN BOX */
-.why-box {
-  background: #fff;
-  border-radius: 30px;
-  padding: 40px;
-  border: 1px solid #e5e7eb;
-}
-
-/* IMAGE */
-.why-img img {
-  width: 100%;
-  border-radius: 25px;
-}
-
-/* TITLE */
-.why-title {
-  font-family: 'Brice', sans-serif;
-  font-size: 28px;
-  color: #073569;
-  font-weight: 700;
-}
-
-/* TEXT */
-.why-text {
-  font-size: 14px;
-  color: #6b7280;
-  margin: 15px 0;
-}
-
-/* SUBTITLE */
-.why-subtitle {
-  font-size: 16px;
-  font-weight: 700;
-  color: #073569;
-  margin-bottom: 15px;
-}
-
-/* LIST */
-.why-list {
-  list-style: none;
-  padding: 0;
-}
-
-.why-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  font-size: 14px;
-  color: #374151;
-}
-
-/* ICON */
-.why-list img {
-  width: 71px;
-  margin-right: 10px;
-}
-
-/* BUTTON */
-.why-btn {
-  margin-top: 15px;
-  background: #324896;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 50px;
-  box-shadow: 0 4px 0 #7AB93B;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .why-box {
-    padding: 25px;
-  }
-
-  .why-title {
-    font-size: 22px;
-  }
-}
-.services-header {
-  background: #7AB93B;
-  text-align: center;
-  padding: 40px 0 60px;
-  position: relative;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.service-section {
-  padding: 80px 0;
-}
-
-/* MAIN BOX */
-#serviceCarousel {
-  border-radius: 30px;
-  padding: 40px;
-  position: relative;
-  color: #fff;
-  overflow: hidden;
-
-  /* TOP → BOTTOM GRADIENT */
-  background: linear-gradient(
-    to bottom,
-    #2c3e75 0%,
-    #3a578c 40%,
-    #5f8f66 70%,
-    #7AB93B 100%
-  );
-}
-
-/* HEADER */
-.service-header h3 {
-  font-family: 'Brice', sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.service-header p {
-  font-size: 13px;
-  max-width: 500px;
-}
-
-/* ARROWS */
-.carousel-nav {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
-
-.carousel-nav button {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: none;
-  margin-left: 8px;
-  background: #fff;
-  color: #324896;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* CARD */
-.service-card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 25px;
-  text-align: center;
-  color: #111;
-  height: 100%;
-}
-
-/* ICON */
-.service-card img {
-  width: 152px;
-  margin-bottom: 10px;
-}
-
-/* TITLE */
-.service-card h5 {
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-/* TEXT */
-.service-card p {
-   flex-grow: 1;
-  font-size: 13px;
-  color: #555;
-}
-
-/* BUTTON */
-.service-btn {
-  margin-top: 10px;
-  background: #324896;
-  color: #fff;
-  padding: 8px 18px;
-  border-radius: 50px;
-  box-shadow: 0 4px 0 #7AB93B;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  #serviceCarousel {
-    padding: 25px;
-  }
-
-  .service-header h3 {
-    font-size: 18px;
-  }
-
-  .carousel-nav {
-    top: 20px;
-    right: 20px;
-  }
-}
-/* SECTION */
-.promise-section {
-  padding: 80px 0;
-  background: #f8fafc;
-}
-
-/* TITLE */
-.promise-title {
-  font-family: 'Brice', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: #073569;
-}
-
-/* SUBTITLE */
-.promise-subtitle {
-  max-width: 700px;
-  margin: 10px auto;
-  font-size: 13px;
-  color: #6b7280;
-}
-
-/* CARD */
-.promise-card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 30px 20px;
-  border: 1px solid #e5e7eb;
-  height: 100%;
-  transition: 0.3s;
-}
-
-/* ICON */
-.promise-card img {
-  width: 148px;
-  margin-bottom: 15px;
-}
-
-/* TITLE */
-.promise-card h5 {
-  font-weight: 700;
-  color: #073569;
-  margin-bottom: 10px;
-}
-
-/* TEXT */
-.promise-card p {
-  font-family: DM Sans;
-font-weight: 400;
-font-style: Regular;
-font-size: 15px;
-line-height: 25px;
-letter-spacing: 0%;
-text-align: center;
-text-transform: lowercase;
-color:#000000;
-;
-
-}
-
-/* HOVER EFFECT */
-.promise-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .promise-title {
-    font-size: 22px;
-  }
-}
-
-/* safety section */
-/* SECTION */
-.safety-section {
-  padding: 70px 0;
-  background: #f5f7fb;
-}
-
-/* MAIN BOX */
-.safety-box {
-  background: #cfe3e6; /* light blue like design */
-  border-radius: 25px;
-  padding: 40px;
-}
-
-/* IMAGE */
-.safety-img img {
-  width: 100%;
-  max-width: 500px;
-}
-
-/* TITLE */
-.safety-content h2 {
-  font-family: 'Brice', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: #073569;
-  line-height: 1.3;
-}
-
-/* TEXT */
-.safety-content p {
-  font-size: 14px;
-  color: #4b5563;
-}
-
-/* FEATURE */
-.safety-content h6 {
-  font-weight: 700;
-  font-size: 14px;
-  color: #073569;
-  margin-bottom: 5px;
-}
-
-/* DOT ICON */
-.dot {
-  width: 10px;
-  height: 10px;
-  background: #7AB93B;
-  border-radius: 50%;
-  margin-right: 10px;
-  margin-top: 6px;
-}
-
-/* RESPONSIVE */
-@media(max-width: 768px) {
-  .safety-box {
-    padding: 25px;
-  }
-
-  .safety-content h2 {
-    font-size: 22px;
-  }
-
-  .safety-img {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-}
-/* CARD */
-.testimonial-section{
-  margin-bottom: 20px;
-}
-.test-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 25px;
-border-style: solid;
-  border-color: #7AB93B;
-  /* 🔥 EXACT BORDER */
-  border-top-width: 2px;
-  border-right-width: 2px;
-  border-bottom-width: 5px;
-  border-left-width: 2px;
- 
-
-  /* 🔥 BOTTOM GREEN LINE EFFECT (REAL MATCH) */
-
-  text-align: left;
-  height: 100%;
-
- 
-}
-
-/* HOVER (VERY LIGHT LIKE DESIGN) */
-
-
-/* TEXT */
-.test-card p {
-  font-size: 13px;
-  color: #374151;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-/* STARS (EXACT RED) */
-.stars {
-  color: #ff2d2d;
-  font-size: 16px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-
-/* USER */
-.user {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.user img {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-}
-
-/* NAME */
-.user h6 {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 700;
-  color: #111827;
-}
-
-/* ROLE */
-.user span {
-  font-size: 12px;
-  color: #6b7280;
-}
-  </style>
 </head>
 <body>
 
@@ -684,7 +21,7 @@ border-style: solid;
   <div class="container">
 
     <a class="navbar-brand" href="#">
-  <img src="../../Logo Car Pair/website icon.png" 
+  <img src="./Logo Car Pair/website icon.png" 
        alt="CharPair Logo"
        style="max-width: 243px; height: auto;">
 </a>
@@ -852,17 +189,31 @@ border-style: solid;
   </div>
 
   <!-- STATS BAR (STATIC BELOW SLIDER) -->
-  <div class="container">
-    <div class="stats-bar">
-      <div class="stat"><h4>11300 +</h4><p>HAPPY RAIDER</p></div>
-      <div class="divider"></div>
-      <div class="stat"><h4>10 +</h4><p>RIDING AWARD</p></div>
-      <div class="divider"></div>
-      <div class="stat"><h4>5230 +</h4><p>TOTAL CARS</p></div>
-      <div class="divider"></div>
-      <div class="stat"><h4>2220 +</h4><p>5 STAR REVIEWS</p></div>
-    </div>
-  </div>
+   <section class="stats-section">
+      <div class="container">
+        <div class="stats-bar d-flex justify-content-between">
+          <div class="stat-item flex-fill">
+            <div class="stat-number">11300 +</div>
+            <div class="stat-label">Happy Raider</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item flex-fill">
+            <div class="stat-number">10 +</div>
+            <div class="stat-label">Riding Award</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item flex-fill">
+            <div class="stat-number">5230 +</div>
+            <div class="stat-label">Total Cars</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item flex-fill">
+            <div class="stat-number">2220 +</div>
+            <div class="stat-label">5 Star Reviews</div>
+          </div>
+        </div>
+      </div>
+    </section>
 </section>
 
 
@@ -1266,6 +617,156 @@ border-style: solid;
 
   </div>
 </section>
+
+<!-- Download Our Mobile Application Section -->
+    <section class="download-app-section">
+      <div class="container">
+        <div class="download-container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <span class="download-tag">Download Our Mobile Application</span>
+              <h2 class="download-heading">
+                Eco-Friendly Carpooling & Affordable Car Care App of India!
+              </h2>
+              <div class="store-buttons">
+                <a href="#" class="store-btn">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                    alt="Download on the App Store"
+                  />
+                </a>
+                <a href="#" class="store-btn">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Get it on Google Play"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Mockup positioned absolutely to overlap -->
+          <div class="mobile-mockup-container d-none d-lg-block">
+            <img
+              src="./images/mobile.png"
+              alt="Char Pair Mobile App"
+              onerror="
+                this.src =
+                  'https://via.placeholder.com/320x600/ffffff/00215B?text=Mobile+Mockup'
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <!-- Brand Info -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="footer-logo">
+              <a class="navbar-brand" href="#">
+                <div class="logo-wrapper">
+                  <img src="/images/logo.png" alt="" />
+                </div>
+              </a>
+            </div>
+            <p class="footer-desc">
+              CharPair Is A Travel Cost Sharing Platform That Connects People
+              Travelling In The Same Direction.
+            </p>
+            <span class="footer-hindi">दो पैर से चलने पर आप फिट रहेंगे !!</span>
+            <span class="footer-hindi"
+              >Char Pair से चलने पर एनवायरनमेंट फिट रहेगा !!</span
+            >
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+            <h5 class="footer-title">QUICK LINKS</h5>
+            <ul class="footer-links">
+              <li><a href="#">Find Lift</a></li>
+              <li><a href="#">Offer Lift</a></li>
+              <li><a href="#">Intercity Service</a></li>
+              <li><a href="#">Group Rides</a></li>
+              <li><a href="#">Family Rides</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+            <h5 class="footer-title">CONTACT US</h5>
+            <div class="contact-item">Raipur C.G- 492013</div>
+            <div class="contact-item">
+              Helpline :<a href="tel:+919981116063">(+91) 9981116063</a>
+            </div>
+            <div class="contact-item">
+              Email :<a href="mailto:Support@Charpair.Com"
+                >Support@Charpair.Com</a
+              >
+            </div>
+            <div class="contact-item">
+              <a href="mailto:Info@Charpair.Com">Info@Charpair.Com</a>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-md-4">
+            <h5 class="footer-title">NEWSLETTER</h5>
+            <form>
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Enter your email"
+              />
+              <button type="submit" class="btn-subscribe">Subscribe Now</button>
+            </form>
+            <div class="newsletter-agree">
+              <input type="checkbox" id="agree" />
+              <label for="agree">I agree to email receive.</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="copyright-text">
+              © All Rights Reserved. || <a href="#">CharPair</a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="social-icons">
+              <a href="#"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+                  alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg"
+                  alt="X"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+                  alt="YouTube"
+              /></a>
+              <a href="#"
+                ><img
+                  src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+                  alt="Instagram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

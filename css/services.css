@@ -110,7 +110,7 @@ body {
 }
 
 .hill-content {
-  background-image: url("/images/about.jpeg");
+  background-image: url("../images/about.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
