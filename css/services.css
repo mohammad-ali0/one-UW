@@ -82,6 +82,9 @@ body {
 }
 
 /* Add Business Button */
+.nav-btn{
+  margin-top: -15px;
+}
 .btn-add-biz {
   background-color: var(--primary-blue);
   color: #ffffff !important;
@@ -111,13 +114,13 @@ body {
 }
 
 .hill-content {
-  background-image: url("../images/about.jpeg");
+  background-image: url("../images/about4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 0 20px 0;
   text-align: center;
-  margin-top: -1px;
+  margin-top: -15px;
 }
 
 .banner-title {
@@ -194,7 +197,8 @@ body {
   color: var(--primary-blue);
   font-weight: 800;
   font-size: 1.15rem;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+  margin-top: -7px;
 }
 
 .service-card p {
@@ -223,100 +227,129 @@ body {
 }
 
 /* Community Testimonials Section */
-.community-section {
-  padding: 80px 0;
-  background-color: #ffffff;
-}
-
-.community-title {
-  color: var(--primary-blue);
-  font-weight: 800;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.community-subtitle {
-  color: #666;
-  font-size: 1rem;
-  max-width: 800px;
-  margin: 0 auto 50px;
-  line-height: 1.6;
-}
-
-.testimonial-card {
-  border: 2px solid var(--primary-green);
-  border-radius: 30px;
-  padding: 30px;
-  height: 100%;
-  background: white;
-  box-shadow: 0 6px 0 var(--primary-green);
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-}
-
-.stars-row {
+.testimonial-section {
   margin-bottom: 20px;
 }
+.test-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  border-style: solid;
+  border-color: #7ab93b;
+  /*  EXACT BORDER */
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 5px;
+  border-left-width: 2px;
 
-.stars-row svg {
-  fill: #e53e3e; /* Red color for stars */
-  margin-right: 2px;
+  /*  BOTTOM GREEN LINE EFFECT (REAL MATCH) */
+
+  text-align: left;
+  height: 100%;
 }
 
-.testimonial-text {
-  color: #444;
-  font-size: 0.95rem;
+/* HOVER (VERY LIGHT LIKE DESIGN) */
+
+/* TEXT */
+.test-card p {
+  font-size: 13px;
+  color: #374151;
   line-height: 1.6;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+/* Pagination container center */
+.swiper-pagination {
+  position: relative;
+  margin-top: 25px;
+}
+.test-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f3c88; 
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-.user-meta {
+/* Subtitle */
+.test-sub {
+  font-size: 15px;
+  color: #6c757d; /* soft gray */
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .test-title {
+    font-size: 24px;
+  }
+
+  .test-sub {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .test-title {
+    font-size: 20px;
+  }
+
+  .test-sub {
+    font-size: 13px;
+  }
+}
+/* Default dots */
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 6px;
+  border-radius: 10px;
+  background: #dcdcdc;
+  opacity: 1;
+  margin: 0 4px !important;
+  transition: all 0.3s ease;
+}
+
+/* Active dot (blue like your design) */
+.swiper-pagination-bullet-active {
+  width: 40px;
+  background: #2f3e9e; /* 🔵 blue */
+}
+/* STARS (EXACT RED) */
+.stars {
+  color: #ff2d2d;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* USER */
+.user {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
-.user-avatar {
-  width: 50px;
-  height: 50px;
+.user img {
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
-.user-details h4 {
-  color: #000;
-  font-weight: 700;
-  font-size: 1rem;
+/* NAME */
+.user h6 {
   margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
 }
 
-.user-details span {
-  color: #666;
-  font-size: 0.85rem;
+/* ROLE */
+.user span {
+  font-size: 12px;
+  color: #6b7280;
 }
-
-.pagination-dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 40px;
-}
-
-.dot {
-  width: 25px;
-  height: 6px;
-  background-color: #e2e8f0;
-  border-radius: 10px;
-}
-
-.dot.active {
-  background-color: var(--primary-blue);
-  width: 40px;
-}
-
 /* Download App Section */
 .download-app-section {
   padding: 60px 0;
@@ -477,16 +510,24 @@ body {
 }
 
 .btn-subscribe {
-  background-color: var(--primary-blue);
-  color: white;
-  border: none;
+   background-color: var(--primary-blue);
+  color: #ffffff !important;
+  margin-bottom: 10px;
   border-radius: 50px;
-  padding: 12px 35px;
+  padding: 10px 28px;
   font-weight: 700;
-  width: auto;
-  display: inline-block;
-  transition: opacity 0.2s;
-  margin-bottom: 20px;
+  font-size: 0.95rem;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 33, 91, 0.15);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+  white-space: nowrap;
+  border-bottom: #7ab93b 4px solid;
+}
+.btn-subscribe:hover {
+  background-color: #001a4a;
+  transform: translateY(-1px);
 }
 
 .newsletter-agree {
@@ -498,20 +539,21 @@ body {
 }
 
 .bottom-bar {
-  background-color: #e9e9e9;
+  background-color: #000A15;
   padding: 15px 0;
 }
 
 .copyright-text {
-  color: #555;
+  color: #FFFFFF;
   font-size: 0.85rem;
   margin: 0;
 }
 
 .copyright-text a {
-  color: #555;
+  color: #FFFFFF;
   text-decoration: underline;
 }
+
 
 .social-icons {
   display: flex;
@@ -646,5 +688,81 @@ body {
   }
   .hill-background {
     min-height: 140px;
+  }
+}
+@media (max-width: 991.98px) {
+  .main-footer{
+    margin-top: -180px;
+  }
+  .navbar-collapse {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+  }
+  .btn-add-biz {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .about-text-content {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  .about-details {
+    padding: 50px 0 20px;
+  }
+  .video-container {
+    height: auto;
+  }
+  .story-title {
+    font-size: 1.8rem;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+  .stat-item {
+    margin-bottom: 25px;
+  }
+  .stat-item:last-child {
+    margin-bottom: 0;
+  }
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .community-title {
+    font-size: 1.8rem;
+  }
+
+  /* Download Section Responsive */
+  .download-container {
+    padding: 40px;
+    margin-bottom: 100px;
+  }
+  .mobile-mockup-container {
+    position: relative;
+    right: auto;
+    bottom: -80px;
+    margin: 0 auto;
+    width: 250px;
+  }
+  .download-heading {
+    text-align: center;
+  }
+  .download-tag {
+    text-align: center;
+  }
+  .store-buttons {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .copyright-text {
+    text-align: center;
   }
 }

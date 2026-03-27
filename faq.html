@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Char Pair - Responsive About Us</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- Bootstrap 5 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -25,7 +27,7 @@
         <!-- Brand Logo -->
         <a class="navbar-brand" href="#">
           <div class="logo-wrapper">
-            <img src="/images/logo.png" alt="" />
+            <img src="./Logo Car Pair/website icon.png" alt="" />
           </div>
         </a>
 
@@ -58,7 +60,7 @@
               <a class="nav-link" href="#">Contact us</a>
             </li>
           </ul>
-          <div class="text-center">
+          <div class="text-center nav-btn">
             <button class="btn btn-add-biz">Add Business</button>
           </div>
         </div>
@@ -74,486 +76,583 @@
 
     <!-- FAQ Section -->
     <section class="faq-section">
-      <div class="container">
-        <div class="faq-header">
-          <h2>YOUR QUESTIONS ANSWERED</h2>
-          <p>
-            Find Answers To The Most Common Questions About CharPair,
-            Verification, Payments, Safety, And More.
-          </p>
-        </div>
+      
 
-        <div class="faq-container">
-          <div class="accordion" id="faqAccordion">
-            <!-- Item 1 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq1"
-                >
-                  <span class="faq-icon">✓</span> USER VERIFICATION
-                </button>
-              </h2>
-              <div
-                id="faq1"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Details about user verification processes.
-                </div>
-              </div>
-            </div>
+        <section class="faq-section">
+  <div class="container">
+    <div class="faq-header">
+      <h2>YOUR QUESTIONS ANSWERED</h2>
+      <p>
+        Find Answers To The Most Common Questions About CharPair,
+        Verification, Payments, Safety, And More.
+      </p>
+    </div>
 
-            <!-- Item 2 (Expanded in Image) -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq2"
-                >
-                  <span class="faq-icon">🚗</span> VEHICLE VERIFICATION
-                </button>
-              </h2>
-              <div
-                id="faq2"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Charpair Ensures That Vehicle Details Shared On The Platform
-                  Are Reviewed For Accuracy And Transparency. Verified Vehicle
-                  Information Helps Riders Choose Trusted Cars And Travel With
-                  More Confidence.
+<div class="faq-container">
+  <div class="accordion" id="faqAccordion">
 
-                  <span class="faq-q"
-                    >Q: Why Is Vehicle Verification Important?</span
-                  >
-                  Verifying Your Vehicle Assures Users That Your Vehicle Is
-                  Safe, Insured, And Suitable For Ride-Sharing. It Helps Avoid
-                  Fake Or Outdated Vehicle Details. This Builds Trust And Can
-                  Increase Your Chance Of Getting More Lifty Bookings.
+    <!-- USER VERIFICATION -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqUser">
+      ✔️User Verification
+    </button>
+  </h2>
 
-                  <span class="faq-q"
-                    >Q: What Documents Do I Need For Verification?</span
-                  >
-                  <ul class="faq-list">
-                    <li>Vehicle Model (E.G. Hyundai i10)</li>
-                    <li>Registration Number</li>
-                    <li>Category (Hatchback/Sedan/SUV)</li>
-                    <li>Insurance Validity Or Expiry Date</li>
-                    <li>Fare Per KM</li>
-                    <li>Number Of Seats Available</li>
-                    <li>Clear Front & Back Images Of The Vehicle</li>
-                    <li>RC Image (Registration Certificate)</li>
-                  </ul>
-                  For Bikes, Similar Details Apply (Model, Insurance, RC,
-                  Vehicle Images, Etc.).
+  <div id="faqUser" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
 
-                  <span class="faq-q">Q: How Do I Upload These Documents?</span>
-                  <ol class="faq-list">
-                    <li>Go To Your Profile > My Vehicle Section.</li>
-                    <li>Enter Details And Upload Required Documents/Photos.</li>
-                    <li>Submit For Review.</li>
-                  </ol>
+  🛡️✔️ User Profile Verification  
 
-                  <span class="faq-q"
-                    >Q: How Long Does Vehicle Verification Take?</span
-                  >
-                  If All Details Are Correct And Clear, It Usually Takes 24-48
-                  Hours.
+  Before booking or offering a ride on CharPair, every user must complete a profile verification process. We review essential information to ensure users are genuine, accountable, and safe to interact with. This helps build a trusted carpooling community.
 
-                  <span class="faq-q"
-                    >Q: What If My Verification Is Rejected?</span
-                  >
-                  You Will Receive A Message With The Reason (E.G. Blurred
-                  Image, Expired Insurance). You Can Resubmit Corrected Details
-                  For Another Review.
-                </div>
-              </div>
-            </div>
+  <span class="faq-q">Q: Why should I verify my profile?</span>
+  Profile verification builds trust within the CharPair platform. A verified badge confirms that you are a real user, not a fake or spam account. This increases your chances of getting ride approvals and ensures safer connections between riders and drivers.
 
-            <!-- Other Items -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq3"
-                >
-                  <span class="faq-icon">💳</span> PAYMENTS CLAIM & RECHARGE
-                </button>
-              </h2>
-              <div
-                id="faq3"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">Details about payments.</div>
-              </div>
-            </div>
+  <span class="faq-q">Q: What is required for profile verification?</span>
+  • A valid Photo ID (NID, Driving License, etc.) <br>
+  • A clear personal profile picture (no random images) <br>
+  • Basic personal details (as required in the app)  
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq4"
-                >
-                  <span class="faq-icon">👤</span> ACCOUNT & PREFERENCES
-                </button>
-              </h2>
-              <div
-                id="faq4"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Details about account settings.
-                </div>
-              </div>
-            </div>
+  <span class="faq-q">Q: How do I verify my profile?</span>
+  Go to your Profile section. <br>
+  Tap on “Verify Profile”. <br>
+  Upload the required documents and photo. <br>
+  Submit your profile for review.
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq5"
-                >
-                  <span class="faq-icon">🤝</span> OFFER LIFT & FIND LIFT
-                </button>
-              </h2>
-              <div
-                id="faq5"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">Details about matching logic.</div>
-              </div>
-            </div>
+  <span class="faq-q">Q: How long does verification take?</span>
+  Profile verification usually takes 12–24 hours, depending on the quality and clarity of your submission.
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq6"
-                >
-                  <span class="faq-icon">🛡️</span> SAFETY & EMERGENCY (SOS)
-                </button>
-              </h2>
-              <div
-                id="faq6"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">Details about safety features.</div>
-              </div>
-            </div>
+  <span class="faq-q">Q: What if my verification is rejected?</span>
+  If your verification is rejected, you will receive a reason (such as unclear photo or invalid ID). You can correct the issue and resubmit your profile anytime.
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq7"
-                >
-                  <span class="faq-icon">🎁</span> REFER AND EARN
-                </button>
-              </h2>
-              <div
-                id="faq7"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">Details about referrals.</div>
-              </div>
-            </div>
+</div>
+  </div>
+</div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq8"
-                >
-                  <span class="faq-icon">🔐</span> SIGN UP & LOGIN
-                </button>
-              </h2>
-              <div
-                id="faq8"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">Details about authentication.</div>
-              </div>
-            </div>
+    <!-- VEHICLE VERIFICATION -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqVehicle">
+      🚗VEHICLE VERIFICATION
+    </button>
+  </h2>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq9"
-                >
-                  <span class="faq-icon">🌱</span> ECO METER & RANKING
-                </button>
-              </h2>
-              <div
-                id="faq9"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Details about environment impact tracking.
-                </div>
-              </div>
-            </div>
+  <div id="faqVehicle" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq10"
-                >
-                  <span class="faq-icon">🚌</span> VENDOR SUPPORT & PARTNER HELP
-                  CENTER
-                </button>
-              </h2>
-              <div
-                id="faq10"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">Details for partners.</div>
-              </div>
-            </div>
+      🚗🛡️ Vehicle Verification  
 
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#faq11"
-                >
-                  <span class="faq-icon">📄</span> PROFILE & VEHICLE PROFILE
-                  COMPLETION
-                </button>
-              </h2>
-              <div
-                id="faq11"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-              >
-                <div class="accordion-body">
-                  Details about profile completion.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      Charpair ensures that vehicle details shared on the platform are reviewed for accuracy and transparency. Verified vehicle information helps riders choose trusted cars and travel with more confidence.
+
+      <span class="faq-q">Q: Why is vehicle verification important?</span>
+      Verifying your vehicle assures users that your vehicle is safe, insured, and suitable for ride-sharing. It helps avoid fake or outdated vehicle details. This builds trust and can increase your chance of getting more Lifty bookings.
+
+      <span class="faq-q">Q: What documents do I need for verification?</span>
+      Vehicle Model (e.g., Hyundai i10)  
+      Registration Number  
+      Category (Hatchback/Sedan/SUV)  
+      Insurance Validity or expiry date  
+      Fare per KM  
+      Number of seats available  
+      Clear front & back images of the vehicle  
+      RC Image (Registration Certificate)  
+      For bikes, similar details apply (model, insurance, RC, vehicle images, etc.).
+
+      <span class="faq-q">Q: How do I upload these documents?</span>
+      Go to your Profile > My Vehicle section.  
+      Enter details and upload required documents/photos.  
+      Submit for review.
+
+      <span class="faq-q">Q: How long does vehicle verification take?</span>
+      If all details are correct and clear, it usually takes 24–48 hours.
+
+      <span class="faq-q">Q: What if my verification is rejected?</span>
+      You will receive a message with the reason (e.g., blurred image, expired insurance). You can resubmit corrected details for another review.
+
+    </div>
+  </div>
+</div>
+
+    <!-- PAYMENTS -->
+   <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPayment">
+      💳PAYMENTS CLAIM & RECHARGE
+    </button>
+  </h2>
+
+  <div id="faqPayment" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+
+      💳🔄 Payments Claim & Recharge  
+
+      Charpair provides a simple and transparent system for payments, recharge, and claim-related queries. We aim to ensure smooth transactions and clear communication for both riders and vendors.
+
+      <span class="faq-q">Q: How do payments work on Char Pair?</span>
+      Char Pair uses a wallet system for transactions. Liftys must recharge their Char Pair wallet to pay for rides, and Lifters receive payments into their wallet. Both parties transact within the app, ensuring transparency.
+
+      <span class="faq-q">Q: What is the Char Pair platform fee?</span>
+      We charge a 10% + applicable tax as platform usage fee:  
+      For Liftys: Fee is charged when paying for a ride using the Char Pair wallet.  
+      For Lifters: Fee is charged when requesting a wallet redemption (withdrawal).
+
+      <span class="faq-q">Q: How do I recharge my wallet?</span>
+      Navigate to the Payment section  
+      Click Recharge in Payment Section  
+      Add amount and click recharge  
+
+      <span class="faq-q">Q: How do I withdraw my earnings as a Lifter?</span>
+      Go to Payments. Tap on "Claim." Minimum withdrawal is ₹500. There is no maximum cap; you can withdraw any available balance. The withdrawal process usually takes 2–3 business days.
+
+      <span class="faq-q">Q: What if my transaction fails?</span>
+      If a payment fails but money is debited from your account, it is usually refunded automatically within a few hours. If not, contact support with transaction details.
+
+    </div>
+  </div>
+</div>
+
+    <!-- ACCOUNT -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccount">
+      ⚙️ACCOUNT & PREFERENCES
+    </button>
+  </h2>
+
+  <div id="faqAccount" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+
+      ⚙️👤 Account & Preferences  
+
+      Manage your Charpair account details, contact information, notification settings, and travel preferences with ease. Keep your profile updated to enjoy a smoother and more personalized carpooling experience.
+
+      <span class="faq-q">Q: Can I edit my account information after signup?</span>
+      Yes, you can update your name, profile photo, email, and contact number anytime. Just go to your Profile > Edit Profile section and make the necessary changes.
+
+      <span class="faq-q">Q: What preferences can I set for ride matches?</span>
+      Char Pair allows you to set Ride Matching Preferences to ensure comfort and compatibility with co-riders. These include:  
+      Gender preference (e.g., same gender only)  
+      Age range of co-riders  
+      Rating filter (minimum rating)  
+      Verified users only  
+      Professional preference (e.g., office goers, students)  
+      Setting these preferences helps the system recommend safer and more relevant rides for you.
+
+      <span class="faq-q">Q: Can I change my preferences later?</span>
+      Absolutely. You can update your preferences at any time before searching for or offering rides. Go to Settings > Ride Preferences in the app.
+
+    </div>
+  </div>
+</div>
+
+    <!-- OFFER & FIND -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqLift">
+      🚘OFFER LIFT & FIND LIFT
+    </button>
+  </h2>
+
+  <div id="faqLift" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+
+      🚘🤝 Offer Lift & Find Lift  
+
+      Post your available seats or search for rides that match your route in just a few steps. Charpair makes it simple for car owners and riders to connect, share travel costs, and reduce unnecessary traffic.
+
+      <span class="faq-q">Q: How do I offer a lift to others?</span>
+      Go to the “Offer Lift” section in the app.  
+      Enter your start and end location, date & time, and available seats.  
+      Set your preferred fare per km (if applicable) or use suggested rate.  
+      Confirm vehicle details and post the ride.  
+      Once posted, interested users can request to join your ride. You can accept or reject requests based on their profile, verification, and ride preferences.
+
+      <span class="faq-q">Q: How do I find a lift for my route?</span>
+      Tap on the “Find Lift” section.  
+      Enter your pickup and drop locations, date, and time range.  
+      Browse the available rides offered by nearby Lifters.  
+      View details such as fare, vehicle type, Lifter rating, and available seats.  
+      Request to join the ride and wait for confirmation.  
+      You’ll receive a notification when the Lifter accepts your request.
+
+      <span class="faq-q">Q: Can I cancel a ride after offering or booking it?</span>
+      Yes, but cancellations should be done well in advance to avoid inconvenience to others. Frequent last-minute cancellations may affect your rating.
+
+      <span class="faq-q">Q: How are fares calculated?</span>
+      Fares are usually calculated on a per kilometer basis, set by the Lifter. You’ll see the estimated fare before booking. Char Pair charges a small platform fee (detailed under the Payments section).
+
+      <span class="faq-q">Q: Can I chat with the co-rider before confirming?</span>
+      Yes. Once a ride request is initiated, there’s a secure in-app chat feature that allows both parties to coordinate and clarify before finalizing the ride.
+
+      <span class="faq-q">Q: Is it safe to accept ride requests from strangers?</span>
+      Char Pair prioritizes safety. You can check the profile, verification status, rating, and ride history of each user before accepting their request. You also have full control to accept or reject any request.
+
+    </div>
+  </div>
+</div>
+
+    <!-- SAFETY -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSOS">
+      🚨SAFETY & EMERGENCY (SOS)
+    </button>
+  </h2>
+
+  <div id="faqSOS" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+
+      🚨🛡️ Safety & Emergency (SOS)  
+
+      Charpair prioritizes user safety with verified profiles, transparent ride details, and emergency support features. In case of unexpected situations, users can access SOS assistance and report concerns directly through the platform.
+
+      <span class="faq-q">Q: What is the SOS feature and when should I use it?</span>
+      The SOS feature is designed for emergency situations such as feeling unsafe, medical issues, or accidents. When triggered, it instantly notifies your emergency contact with your live location and trip details so they can assist or escalate quickly.
+
+      <span class="faq-q">Q: What happens when I use the SOS button?</span>
+      When you tap SOS:  
+      Your emergency contact receives a notification with your real-time location.  
+      You get quick options to call your emergency contact or local help.  
+      In future updates, SOS may also notify local authorities.
+
+      <span class="faq-q">Q: How do I set or update my emergency contact?</span>
+      Go to Profile > Emergency Contact > Enter name and phone number. You can change it any time before or after a ride.
+
+      <span class="faq-q">Q: Will SOS work without the internet?</span>
+      Without the internet, SOS may not send your live location but will try to use your last known location. You should ensure the internet is active for the best results.
+
+      <span class="faq-q">Q: Who can use the SOS feature?</span>
+      Everyone. The SOS button is available for both Lifter and Lifty during any ride.
+
+    </div>
+  </div>
+</div>
+
+    <!-- REFER -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefer">
+      🎁REFER AND EARN
+    </button>
+  </h2>
+
+  <div id="faqRefer" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+
+      🎁🤝 Refer and Earn  
+
+      Invite your friends to join Charpair and grow the trusted carpooling community. When they sign up and start using the platform, you can enjoy referral benefits as per our program terms.
+
+      <span class="faq-q">Q: What is the Refer and Earn program?</span>
+      The Refer and Earn program allows users to invite their friends and family to join the Char Pair app. When someone signs up using your referral code, both you and your friend receive a reward of Rs.250.
+
+      <span class="faq-q">Q: How do I refer someone?</span>
+      Open the Char Pair app.  
+      Go to the “Refer Friends” section.  
+      Copy your unique referral code (e.g., 12345678).  
+      Share it with your friends via WhatsApp, SMS, email, or social media.  
+      Ask them to enter this code during registration.
+
+      <span class="faq-q">Q: What does the referee (my friend) get?</span>
+      Your friend (the referee) will receive a welcome bonus of Rs.250 after signing up using your referral code.
+
+      <span class="faq-q">Q: What do I get as the referrer?</span>
+      You will receive Rs.250 for each successful referral once your friend downloads the app and completes the sign-up process using your referral code.
+
+      <span class="faq-q">Q: Is there a limit on how many people I can refer?</span>
+      There is usually no limit to how many people you can refer. The more friends you refer, the more you can earn! However, make sure to check the app's terms and conditions for any updates.
+
+      <span class="faq-q">Q: When will I receive my referral bonus?</span>
+      Referral bonuses are typically credited immediately after your friend completes their registration and first app activity, or within 24–48 hours, depending on the verification process.
+
+      <span class="faq-q">Q: Where can I see my referral earnings?</span>
+      You can track all your referral activity and earnings in the “Refer Friends” or “Rewards” section of the app. Detailed information may be available under your wallet or earnings history.
+
+      <span class="faq-q">Q: My friend forgot to use my code. Can I still get the bonus?</span>
+      Unfortunately, referral bonuses are only valid if the code is entered during the sign-up process. Once the account is created, it cannot be retroactively applied.
+
+      <span class="faq-q">Q: Can I use my referral code on multiple devices/accounts?</span>
+      No. The referral code is intended for new users only. Attempting to misuse it through multiple accounts or devices may result in suspension of your rewards or account.
+
+      <span class="faq-q">Q: Is the referral bonus withdrawable?</span>
+      No, the referral bonus cannot be withdrawn to a bank account or external wallet. It can only be used within the Char Pair app for eligible services such as paying for your rides, applying discounts on future bookings, or other in-app services as allowed by the platform.
+
+    </div>
+  </div>
+</div>
+
+    <!-- LOGIN -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSign">
+      🔐SIGN UP & LOGIN
+    </button>
+  </h2>
+
+  <div id="faqSign" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+
+      🔐📱 Sign up & Login  
+
+      Create your Charpair account in just a few steps using your mobile number or email. Secure login and profile verification help ensure a safe and smooth experience for both riders and car owners.
+
+      <span class="faq-q">Q: What is Char Pair?</span>
+      Char Pair is a carpooling platform designed to help people offer and find shared rides in a convenient, affordable, and verified way. It connects Lifters (those offering rides) with Liftys (those looking for a ride) while ensuring safety, transparent payments, and a smooth user experience.
+
+      <span class="faq-q">Q: How do I download and install the app?</span>
+      Char Pair is available on the Google Play Store. You can simply search for "Char Pair" or click here to download. Install the app and follow the registration steps to start.
+
+      <span class="faq-q">Q: How do I register and set up my profile?</span>
+      Once installed, open the app and enter your phone number. You will receive an OTP to verify your number. After completing OTP verification, you’ll be asked to enter basic details like your name, designation, location, and email ID. Once these details are submitted, your account setup will be complete and you can start using all features of the app.
+
+    </div>
+  </div>
+</div>
+
+    <!-- ECO -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+      🌱ECO METER & RANKING
+    </button>
+  </h2>
+
+  <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      🌱📊 Eco Meter & Ranking  
+
+      Track your positive impact every time you share a ride. Charpair’s Eco Meter highlights your contribution toward reducing traffic and carbon emissions, while rankings recognize active and responsible community members.
+
+      <span class="faq-q">Q: What is the Eco Meter in Char Pair?</span>
+      Eco Meter is a unique feature that tracks your positive environmental impact by using carpools. It calculates shared kilometers travelled, CO₂ emissions saved, and number of rides completed. This helps you see how much you're contributing to a greener planet.
+
+      <span class="faq-q">Q: What is the Ranking system?</span>
+      The Ranking system reflects your activity, safety, and eco-friendliness on Char Pair. You can improve your rank by completing more rides, maintaining high ratings, verifying your profile and vehicle, and following good rider/lifter etiquette. Top users may be shown on leaderboards or get special recognition in the app.
+
+      <span class="faq-q">Q: Will I get rewards for a high Eco Rank?</span>
+      Yes! In future updates, Char Pair plans to launch a reward system for high-ranking users, including discounted rides, gift vouchers, loyalty points, and exclusive badges. These features will motivate users to maintain good behavior and keep the platform sustainable.
+    </div>
+  </div>
+</div>
+
+    <!-- VENDOR -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+      🔧VENDOR SUPPORT
+    </button>
+  </h2>
+
+  <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      🔧🚘 Vendor Support & Partner Help Center  
+
+      Are you a garage owner, car service provider, spare parts dealer, or vehicle care business partnering with Charpair? This section is designed to help vendors understand listing guidelines, lead management, account setup, verification process, and platform policies.
+
+      <span class="faq-q">Q: How can I register my garage or car service business on CharPair?</span>
+      To register your business, fill out the vendor listing form on our website. Select the correct service category, enter your business details, and submit the form. Our team will review your application and activate your listing after verification.
+
+      <span class="faq-q">Q: What documents are required for vendor verification?</span>
+      Basic business information such as business name, contact details, service category, and location is required. Additional details may be requested during the review process to confirm authenticity and maintain platform quality.
+
+      <span class="faq-q">Q: How does the lead system work for vendors?</span>
+      Once approved, your business will appear in relevant searches based on your category and location. Interested customers can contact you directly through the details provided in your listing. Leads are generated based on user interest and service relevance.
+
+      <span class="faq-q">Q: Is there any charge for listing my services?</span>
+      Vendor listing may involve charges depending on the current program or plan. If applicable, fees will be clearly communicated before activation. CharPair may introduce or update pricing policies in the future.
+
+      <span class="faq-q">Q: How can I update my service details or pricing?</span>
+      To update your listing information, please contact our support team. All changes will be reviewed to ensure accuracy and consistency on the platform.
+
+      <span class="faq-q">Q: How do I respond to customer enquiries?</span>
+      Customer enquiries are shared directly with vendors. You can communicate with customers via phone call or WhatsApp to discuss service details, pricing, and availability.
+
+      <span class="faq-q">Q: What services are allowed on CharPair?</span>
+      CharPair supports genuine vehicle-related services such as car repair, car wash, tyre services, battery services, car AC work, denting and painting, accessories, towing, and insurance assistance. Non-automotive and illegal services are strictly prohibited.
+
+      <span class="faq-q">Q: How are fake or non-car businesses handled?</span>
+      All listings are reviewed before approval. Businesses that do not match vehicle-related categories or provide misleading information may be rejected or removed to maintain trust and platform quality.
+
+      <span class="faq-q">Q: Can I manage or remove my listing?</span>
+      Yes. Vendors can request updates, edits, or removal of their listing by contacting our support team. All requests will be processed after review.
+
+      <span class="faq-q">Q: How long does the verification process take?</span>
+      Verification time may vary depending on the details provided. Our team reviews each application carefully to ensure authenticity before approval.
+
+      <span class="faq-q">Q: How can I contact vendor support?</span>
+      For assistance regarding registration, verification, updates, or general queries, please contact:<br>
+      📞 +91 998*******<br>
+      support@charpair.com<br>
+      info@charpair.com
+    </div>
+  </div>
+</div>
+
+    <!-- PROFILE -->
+    <div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
+      📄PROFILE COMPLETION
+    </button>
+  </h2>
+
+  <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      🚗📄 Profile & Vehicle Profile Completion  
+
+      <span class="faq-q">Q: What is Vehicle Profile Completion?</span>
+      Vehicle Profile Completion shows how much of your vehicle information has been added to your Charpair account. The more details you provide, the higher your completion percentage.
+
+      <span class="faq-q">Q: How is my vehicle profile percentage calculated?</span>
+      Your completion score is calculated based on the details you upload:<br><br>
+
+      Vehicle front, back & side images – 30%<br>
+      Registration Certificate (RC) – 30%<br>
+      Insurance validity – 10%<br>
+      Vehicle model – 10%<br>
+      Vehicle colour – 10%<br>
+      Company name – 5%<br>
+      Manufacturing year – 5%<br><br>
+
+      Adding all required details increases your completion score.
+
+      <span class="faq-q">Q: What do I need to upload to increase my completion percentage?</span>
+      Clear images of your vehicle (front, rear, and side)<br>
+      Registration Certificate (RC)<br>
+      Valid insurance details<br>
+      Vehicle model, colour, company name, and manufacturing year
+
+      <span class="faq-q">Q: At what percentage will I get a Verified Badge?</span>
+      Once your vehicle profile reaches 80% completion, it becomes eligible for verification review. After approval, a Verified Badge will be added to your profile.
+
+      <span class="faq-q">Q: Is uploading RC and insurance mandatory?</span>
+      Uploading RC and insurance details is strongly recommended, as they contribute significantly to your completion percentage and verification eligibility.
+
+      <span class="faq-q">Q: Why are vehicle photos important?</span>
+      Vehicle photos help maintain transparency and allow riders to identify the car before travel. Clear images also improve trust within the community.
+
+      <span class="faq-q">Q: Can I update my vehicle details later?</span>
+      Yes. You can update or edit your vehicle details anytime from your account settings to improve your completion score.
+
+      <span class="faq-q">Q: Will 100% completion automatically verify my vehicle?</span>
+      Reaching 80% makes you eligible for verification. Final approval depends on review of submitted details.
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
       </div>
     </section>
 
     <!-- Loved By Our Community Section -->
-    <section class="community-section">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="community-title">Loved By Our Community</h2>
-          <p class="community-subtitle">
-            Feedback From Early Users Who Believe In Shared Travel, Savings, And
-            Responsible Commuting. CharPair Continues To Evolve Based On Real
-            User Experiences And Needs.
-          </p>
-        </div>
+     <section class="testimonial-section">
+  <div class="container text-center">
+    
+    <!-- TITLE -->
+    <h2 class="test-title">LOVED BY OUR COMMUNITY</h2>
+    <p class="test-sub">
+      Feedback from early users who believe in shared travel, savings, and
+      responsible commuting.
+    </p>
 
-        <div class="row g-4">
-          <!-- Testimonial 1 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="stars-row">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-              </div>
-              <p class="testimonial-text">
-                "I Started Offering Rides On CharPair And It's Been Fantastic To
-                Reduce Fuel Expenses. The Cost-Sharing Model Is Fair And
-                Transparent. I Meet Interesting People And Contribute To The
-                Environment. CharPair Is The Future Of Travel!"
-              </p>
-              <div class="user-meta">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Arjun Verma"
-                  class="user-avatar"
-                  onerror="
-                    this.src =
-                      'https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun'
-                  "
-                />
-                <div class="user-details">
-                  <h4>Arjun Verma</h4>
-                  <span>Chandigarh Driver</span>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- ✅ SWIPER START -->
+    <div class="swiper testimonialSwiper mt-5">
+      <div class="swiper-wrapper">
 
-          <!-- Testimonial 2 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="stars-row">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-              </div>
-              <p class="testimonial-text">
-                "I Started Offering Rides On CharPair And It's Been Fantastic To
-                Reduce Fuel Expenses. The Cost-Sharing Model Is Fair And
-                Transparent. I Meet Interesting People And Contribute To The
-                Environment. CharPair Is The Future Of Travel!"
-              </p>
-              <div class="user-meta">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Arjun Verma"
-                  class="user-avatar"
-                  onerror="
-                    this.src =
-                      'https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun2'
-                  "
-                />
-                <div class="user-details">
-                  <h4>Arjun Verma</h4>
-                  <span>Chandigarh Driver</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonial 3 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="testimonial-card">
-              <div class="stars-row">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.169L12 18.896l-7.334 3.87 1.4-8.169-5.934-5.787 8.2-1.192L12 .587z"
-                  />
-                </svg>
-              </div>
-              <p class="testimonial-text">
-                "I Started Offering Rides On CharPair And It's Been Fantastic To
-                Reduce Fuel Expenses. The Cost-Sharing Model Is Fair And
-                Transparent. I Meet Interesting People And Contribute To The
-                Environment. CharPair Is The Future Of Travel!"
-              </p>
-              <div class="user-meta">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Arjun Verma"
-                  class="user-avatar"
-                  onerror="
-                    this.src =
-                      'https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun3'
-                  "
-                />
-                <div class="user-details">
-                  <h4>Arjun Verma</h4>
-                  <span>Chandigarh Driver</span>
-                </div>
+        <!-- CARD 1 -->
+        <div class="swiper-slide">
+          <div class="test-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “I started offering rides on CharPair and it’s been
+              fantastic to reduce fuel expenses. The cost-sharing model
+              is fair and transparent.”
+            </p>
+            <div class="user">
+              <img src="https://i.pravatar.cc/50?img=1" />
+              <div>
+                <h6>Arjun Verma</h6>
+                <span>Chandigarh Driver</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="pagination-dots">
-          <div class="dot"></div>
-          <div class="dot active"></div>
-          <div class="dot"></div>
+        <!-- CARD 2 -->
+        <div class="swiper-slide">
+          <div class="test-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Great platform! I met interesting people and saved money
+              on daily rides. Highly recommended for city travel.”
+            </p>
+            <div class="user">
+              <img src="https://i.pravatar.cc/50?img=2" />
+              <div>
+                <h6>Rahul Sharma</h6>
+                <span>Delhi User</span>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- CARD 3 -->
+        <div class="swiper-slide">
+          <div class="test-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “I started offering rides on CharPair and it’s been
+              fantastic to reduce fuel expenses. The cost-sharing model
+              is fair and transparent.”
+            </p>
+            <div class="user">
+              <img src="https://i.pravatar.cc/50?img=3" />
+              <div>
+                <h6>Sneha Patel</h6>
+                <span>Mumbai Rider</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUPLICATE FOR LOOP -->
+        
+       
+
+        <div class="swiper-slide">
+          <div class="test-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “I started offering rides on CharPair and it’s been
+              fantastic to reduce fuel expenses. The cost-sharing model
+              is fair and transparent.”
+            </p>
+            <div class="user">
+              <img src="https://i.pravatar.cc/50?img=3" />
+              <div>
+                <h6>Sneha Patel</h6>
+                <span>Mumbai Rider</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
+
+      <!-- DOTS -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+    <!-- ✅ SWIPER END -->
+
+  </div>
+</section>
 
     <!-- Download Our Mobile Application Section -->
     <section class="download-app-section">
@@ -584,7 +683,7 @@
           <!-- Mockup positioned absolutely to overlap -->
           <div class="mobile-mockup-container d-none d-lg-block">
             <img
-              src="/images/mobile.png"
+              src="./images/mobile-image.png"
               alt="Char Pair Mobile App"
               onerror="
                 this.src =
@@ -605,7 +704,7 @@
             <div class="footer-logo">
               <a class="navbar-brand" href="#">
                 <div class="logo-wrapper">
-                  <img src="/images/logo.png" alt="" />
+                  <img src="./Logo Car Pair/website icon.png" alt="" />
                 </div>
               </a>
             </div>
@@ -686,7 +785,7 @@
               /></a>
               <a href="#"
                 ><img
-                  src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg"
+                  src="./images/Vector.png"
                   alt="X"
               /></a>
               <a href="#"
@@ -709,3 +808,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+<!-- testimonial slider -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".testimonialSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+
+    loop: true,
+    speed: 800,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+     breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 3
+    }
+  }
+  });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
