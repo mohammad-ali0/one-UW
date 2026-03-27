@@ -1,0 +1,138 @@
+body {
+  background-color: #f4f4f4;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-wrapper {
+  padding: 20px;
+}
+
+/* Logo */
+.logo-img {
+  max-width: 160px;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .logo-img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Form */
+.login-box {
+  max-width: 350px;
+}
+
+/* Eye icon */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.toggle-password i {
+  font-size: 18px;
+  color: #333;
+}
+
+.toggle-password i:hover {
+  color: #000;
+}
+
+/* Divider */
+.divider {
+  font-size: 12px;
+  color: #999;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  width: 30%;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+/* Right side */
+.right-card {
+  background: linear-gradient(315deg, #8360c3 0%, #2ebf91 75.03%);
+  border-radius: 20px;
+  padding: 30px;
+  width: 80%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-inner {
+  background: rgba(255, 255, 255, 0.15); /* transparent */
+  backdrop-filter: blur(15px); /* glass blur */
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 30px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* glass border */
+}
+.image-glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card-inner h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.car-img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+/* Carousel */
+.carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
+.custom-dots {
+  position: static;
+  margin-top: 15px;
+}
+
+.custom-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  margin: 0 5px;
+}
+
+.custom-dots .active {
+  background-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .right-card {
+    display: none;
+  }
+}
